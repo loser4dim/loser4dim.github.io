@@ -1,12 +1,15 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
+//import Image from 'next/image'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTwitter, faInstagram, faMixcloud, faDiscord, faSoundcloud, faTwitch } from "@fortawesome/free-brands-svg-icons";
+//import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 
-const inter = Inter({ subsets: ['latin'] })
+//const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
+    /*
     <>
       <Head>
         <title>Create Next App</title>
@@ -109,6 +112,75 @@ export default function Home() {
           </a>
         </div>
       </main>
+    </>*/
+    <>
+      <Head>
+        <title>
+          loser4dim
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/Resources/favicon.ico" />
+        <link rel="apple-touch-icon" href="/Resources/logo192.png" />
+      </Head>
+      <main className={styles.App}>
+        <noscript>
+          You Need to Enable JavaScript to Run This Application.
+        </noscript>
+        <div className={styles.AppHeader}>
+          <img src="/Resources/logo.png" className={styles.AppLogo} alt="logo" />
+          <nav>
+              <ul className={styles.AppLink}>
+                
+                <li>
+                  <a href="https://www.mixcloud.com/loser4dim/">
+                    <FontAwesomeIcon icon={faMixcloud} />
+                  </a>
+                </li>
+
+                <li>
+                  <a href="https://soundcloud.com/loser4dim">
+                    <FontAwesomeIcon icon={faSoundcloud} />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://instagram.com/loser4dim/">
+                    <FontAwesomeIcon icon={faInstagram} />
+                  </a>
+                </li>
+
+                <li>
+                  <a href="https://discord.gg/3mPudy837n">
+                    <FontAwesomeIcon icon={faDiscord} />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.twitch.tv/loser4dim">
+                    <FontAwesomeIcon icon={faTwitch} />
+                  </a>
+                </li>
+                
+                <li>
+                  <a href="https://x.com/loser4dim/">
+                    <FontAwesomeIcon icon={faTwitter} />
+                  </a>
+                </li>
+              </ul>
+              <ul className={styles.AppLink}>
+                <li>
+                  <a href="https://misskey.niri.la/@loser4dim/">
+                    Misskey.niri.la
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.threads.net/@loser4dim/">
+                    Threads
+                  </a>
+                </li>
+                
+              </ul>
+          </nav>
+        </div>
+      </main>
     </>
-  )
+  );
 }
