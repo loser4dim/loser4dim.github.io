@@ -1,4 +1,5 @@
-import Head from 'next/head'
+import Head from 'next/head';
+import Link from "next/link";
 //import Image from 'next/image'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTwitter, faInstagram, faMixcloud, faDiscord, faSoundcloud, faTwitch } from "@fortawesome/free-brands-svg-icons";
@@ -176,7 +177,11 @@ export default function Home() {
                     Threads
                   </a>
                 </li>
-                
+                <li>
+                  <Link href="/renderer4d">
+                    Renderer4D-Developing
+                  </Link>
+                </li>
               </ul>
           </nav>
         </div>
