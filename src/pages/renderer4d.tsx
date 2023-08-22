@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 const initialize = async() => {
   const vertex_shader_soutrce_code =
@@ -100,9 +100,9 @@ const initialize = async() => {
 }
 
 export default function Renderer() {
-  const [call_init, setIn] = useState(0);
-  const [call_frame, setFr] = useState(0);
-  const [h, setH] = useState(0);
+  //const [call_init, setIn] = useState(0);
+  //const [call_frame, setFr] = useState(0);
+  //const [h, setH] = useState(0);
 
   //const [window_size, setWindowSize] = useState({width: 0, height: 0});
 
