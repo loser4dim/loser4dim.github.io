@@ -1,27 +1,40 @@
 {
   "name": "loser-web-page",
   "version": "0.3.9",
+  "description": "My Page for loser4dim",
+  "license": "",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url" : "https://github.com/loser4dim/loser4dim.github.io.git"
+  },
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
+    "lint"  : "next lint",
+    "build" : "next build",
+    "dev"   : "next dev",
+    "start" : "next start",
     "export": "next export"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.4.0",
+    "next"     : "13.4.12",
+    "react"    : "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-svg-core" : "^6.4.0",
     "@fortawesome/free-brands-svg-icons": "^6.4.0",
-    "@fortawesome/free-solid-svg-icons": "^6.4.0",
-    "@fortawesome/react-fontawesome": "^0.2.0",
-    "@types/node": "20.4.4",
-    "@types/react": "18.2.15",
-    "@types/react-dom": "18.2.7",
-    "eslint": "8.45.0",
-    "eslint-config-next": "13.4.12",
-    "next": "13.4.12",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "typescript": "5.1.6"
+    "@fortawesome/free-solid-svg-icons" : "^6.4.0",
+    "@fortawesome/react-fontawesome"    : "^0.2.0",
+    "@next/eslint-plugin-next"          : "^13.4.19",
+    "@types/node"                       : "20.4.4",
+    "@types/react"                      : "18.2.15",
+    "@types/react-dom"                  : "18.2.7",
+    "@typescript-eslint/eslint-plugin"  : "^6.4.1",
+    "@typescript-eslint/parser"         : "^6.4.1",
+    "@webgpu/types"                     : "^0.1.34",
+    "eslint"                            : "8.45.0",
+    "eslint-config-next"                : "13.4.12",
+    "typescript"                        : "5.1.6",
+    "webgpu"                            : "^0.1.16"
   }
 }
