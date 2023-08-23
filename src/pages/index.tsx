@@ -37,7 +37,7 @@ const IndexPage = () => {
 
         const new_width  = (window.innerWidth / window.innerHeight < LOGO_IMAGE_RATIO) ? window.innerWidth                    : window.innerHeight * LOGO_IMAGE_RATIO;
         const new_height = (window.innerWidth / window.innerHeight < LOGO_IMAGE_RATIO) ? window.innerWidth / LOGO_IMAGE_RATIO : window.innerHeight;
-        logo_img.setAttribute("width", (new_width).toString());
+        logo_img.setAttribute("width" , (new_width).toString());
         logo_img.setAttribute("height", (new_height).toString());
 
         return;
