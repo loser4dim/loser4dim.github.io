@@ -8,75 +8,68 @@
     "node_modules"
   ],
   "compilerOptions": {
-    "allowUnreachableCode" : false,
-    "allowUnusedLabels"    : false,
-    "alwaysStrict": true,
-    "exactOptionalPropertyTypes": true,
-    "noFallthroughCasesInSwitch": true,
-    "noImplicitAny": true,
-    "noImplicitOverride": true,
-    "noImplicitReturns": true,
-    "noImplicitThis": true,
+    "allowUnreachableCode"              : false,
+    "allowUnusedLabels"                 : false,
+    "alwaysStrict"                      : true,
+    "exactOptionalPropertyTypes"        : true,
+    "noFallthroughCasesInSwitch"        : true,
+    "noImplicitAny"                     : true,
+    "noImplicitOverride"                : true,
+    "noImplicitReturns"                 : true,
+    "noImplicitThis"                    : true,
     "noPropertyAccessFromIndexSignature": true,
-    "noUncheckedIndexedAccess": true,
-    "noUnusedLocals": true,
-    "strict": true,
-    "strictBindCallApply": true,
-    "strictFunctionTypes": true,
-    "strictNullChecks": true,
-    "strictPropertyInitialization": true,
-    "useUnknownInCatchVariables": true,
+    "noUncheckedIndexedAccess"          : true,
+    "noUnusedLocals"                    : true,
+    "strict"                            : true,
+    "strictBindCallApply"               : true,
+    "strictFunctionTypes"               : true,
+    "strictNullChecks"                  : true,
+    "strictPropertyInitialization"      : true,
+    "useUnknownInCatchVariables"        : true,
 
-    "allowArbitraryExtensions": false,
-    "allowImportingTsExtensions": true,
-    "allowUmdGlobalAccess": true,
+    "allowArbitraryExtensions"          : false,
+    "allowImportingTsExtensions"        : true,
+    "allowUmdGlobalAccess"              : true,
 
-    "module"                          : "node16",
-    "moduleResolution"                : "node16",
+    "module"                            : "node16",
+    "moduleResolution"                  : "node16",
     "paths": {
       "@/*": ["./src/*", "./public/*"]
     },
-    "resolveJsonModule"               : true,
-    "resolvePackageJsonExports"     : true,
-    "resolvePackageJsonImports": true,
+    "resolveJsonModule"                 : true,
+    "resolvePackageJsonExports"         : true,
+    "resolvePackageJsonImports"         : true,
     "typeRoots": [
       "./node_modules/@webgpu/types",
       "./node_modules/@types"
     ],
 
+    "noEmit"                            : true,
+    "sourceMap"                         : true,
+    
+    "allowJs"                           : true,
+    "checkJs"                           : true,
 
-    
-    "noEmit"                          : true,
-    "sourceMap"                       : true,
-    
-    "allowJs"                         : true,
-    "checkJs" : true,
+    "esModuleInterop"                   : true,
+    "forceConsistentCasingInFileNames"  : true,
+    "isolatedModules"                   : true,
 
-    
-    
-    
-    "esModuleInterop"                 : true,
-    "forceConsistentCasingInFileNames": true,
-    "isolatedModules"                 : true,
-
-    //"charset": "utf8",
-
-    "jsx"                             : "preserve",
+    "jsx"                               : "preserve",
     "lib": [
       "DOM",
       "DOM.Iterable",
       "ESNext"
     ],
-    "moduleDetection": "auto",
-    "noLib": false,
-    "target"                          : "esnext",
+    "moduleDetection"                   : "auto",
+    "noLib"                             : false,
+    "target"                            : "esnext",
   
-    "diagnostics": true,
-    "extendedDiagnostics": true,
-    "traceResolution": true,
+    "diagnostics"                       : true,
+    "extendedDiagnostics"               : true,
+    "traceResolution"                   : true,
 
-    "incremental": true,
+    "incremental"                       : true,
 
-    "skipLibCheck"                    : true
+    "skipLibCheck"                      : true
   }
 }

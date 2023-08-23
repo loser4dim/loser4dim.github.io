@@ -1,9 +1,9 @@
 {
-  "name": "loser-web-page",
-  "version": "0.3.9",
+  "name"       : "loser-web-page",
+  "version"    : "0.3.9",
   "description": "My Page for loser4dim",
-  "license": "",
-  "private": true,
+  "license"    : "",
+  "private"    : true,
   "repository": {
     "type": "git",
     "url" : "https://github.com/loser4dim/loser4dim.github.io.git"
