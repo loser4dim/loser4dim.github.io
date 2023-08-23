@@ -34,8 +34,12 @@ const IndexPage = () => {
         const LOGO_IMAGE_RATIO = 1247.0 / 1835.0;
 
         const logo_img = document.getElementById("logo_image") as HTMLElement;
-        logo_img.setAttribute("width", (window.innerHeight * LOGO_IMAGE_RATIO).toString());
-        logo_img.setAttribute("height", (window.innerHeight).toString());
+
+        const new_width  = (window.innerWidth / window.innerHeight < LOGO_IMAGE_RATIO) ? window.innerWidth                    : window.innerHeight * LOGO_IMAGE_RATIO;
+        const new_height = (window.innerWidth / window.innerHeight < LOGO_IMAGE_RATIO) ? window.innerWidth / LOGO_IMAGE_RATIO : window.innerHeight;
+        logo_img.setAttribute("width", (new_width).toString());
+        logo_img.setAttribute("height", (new_height).toString());
+
         return;
       }
       handleResize();
@@ -79,6 +83,7 @@ const IndexPage = () => {
             width  = {1247}
             height = {1835}
             alt    = "logo"
+            quality = {100}
           />
         </div>
         <div className = {styles["IndexLinks"]}>
