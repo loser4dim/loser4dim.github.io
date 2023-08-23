@@ -1,0 +1,9 @@
+.RendererPage {
+  background-color: #282c34;
+}
+
+.RendererMain {
+  text-align     : center;
+  display        : flex;
+  justify-content: space-evenly;
+}

@@ -102,7 +102,6 @@ const IndexPage = () => {
                     <FontAwesomeIcon icon={faMixcloud} />
                   </a>
                 </li>
-
                 <li className = {styles["IndexListsColumnContent"]}>
                   <a href="https://soundcloud.com/loser4dim/tracks">
                     <FontAwesomeIcon icon={faSoundcloud} />

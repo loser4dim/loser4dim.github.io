@@ -41,7 +41,8 @@
     "resolvePackageJsonImports"         : true,
     "typeRoots": [
       "./node_modules/@webgpu/types",
-      "./node_modules/@types"
+      "./node_modules/@types",
+      "./node_modules/@types/gl-matrix"
     ],
 
     "noEmit"                            : true,
