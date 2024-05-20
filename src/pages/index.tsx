@@ -14,7 +14,6 @@ import {
 import {
   faInstagram,
   faMixcloud,
-  faDiscord,
   faSoundcloud,
   faTwitch,
   faBandcamp,
