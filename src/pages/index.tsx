@@ -138,11 +138,13 @@ const IndexPage = () => {
                     <FontAwesomeIcon icon={faTwitch} />
                   </a>
                 </li>
+                <!--
                 <li className = {styles["IndexListsColumnContent"]}>
                   <a href="https://discord.gg/3mPudy837n">
                     <FontAwesomeIcon icon={faDiscord} />
                   </a>
                 </li>
+                -->
                 <li className = {styles["IndexListsColumnContent"]}>
                   <a href="https://misskey.io/@loser4dim/">
                     <p>
