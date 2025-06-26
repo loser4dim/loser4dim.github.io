@@ -32,7 +32,7 @@ jobs:
       - name: Install dependencies
         run: pnpm install --unsafe-perm
       - name: Build with Next.js
-        run: pnpm build && pnpm export
+        run: pnpm build
       - name: Setup Pages
         uses: actions/configure-pages@v5
         with:
