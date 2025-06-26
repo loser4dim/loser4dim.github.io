@@ -29,10 +29,8 @@ jobs:
         with:
           node-version: latest
           cache: pnpm
-      - name: Allow build dependencies
-        run: echo "allowed-build-dependencies=@tailwindcss/oxide,sharp" >> .npmrc
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install --unsafe-perm
       - name: Build with Next.js
         run: pnpm build && pnpm export
       - name: Setup Pages
