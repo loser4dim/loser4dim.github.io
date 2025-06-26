@@ -5,9 +5,7 @@ const nextConfig: NextConfig = {
   trailingSlash: true,
   images: {
     unoptimized: true
-  },
-  //basePath   : "/loser4dim.github.io",
-  //assetPrefix: "/loser4dim.github.io"
+  }
 };
 
 export default nextConfig;
