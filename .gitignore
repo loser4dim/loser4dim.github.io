@@ -9,8 +9,6 @@ dist/
 .trace/
 trace/
 
-docs/
-
 .vscode/
 
 .DS_Store
