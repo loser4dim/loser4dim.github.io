@@ -38,7 +38,7 @@ const snsLinks = [
     icon: (<IconDiv icon={faSoundcloud} />)
   },
   {
-    name: "Bandcamp-Artist",
+    name: "Bandcamp",
     href: "https://loser4dim.bandcamp.com/",
     icon: (<IconDiv icon={faBandcamp} />)
   },
