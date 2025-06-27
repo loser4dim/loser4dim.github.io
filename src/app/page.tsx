@@ -9,7 +9,7 @@ export default function Home() {
       <h1 className="sr-only">
         loser4dim
       </h1>
-      
+        aaaaaaaa
         <Image
           src="/loser4dim/Logo.webp"
           alt="Logo"

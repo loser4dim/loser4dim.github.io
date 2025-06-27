@@ -1,6 +1,6 @@
-/* @import "tailwindcss";
+@import "tailwindcss";
 
-.mask-overlay {
+/*.mask-overlay {
   position        : fixed;
   inset           : 0;
   background-color: #0F2E2D;

@@ -6,7 +6,11 @@ const config: Config = {
     "./app/**/*.{ts,tsx,js,jsx,mdx}",
   ],
   theme: {
-    extend: {}
+    extend: {
+      fontFamily: {
+        sans: ['"BIZ UDPGothic"', '"Open Sans"'],
+      }
+    }
   },
   plugins: []
 };

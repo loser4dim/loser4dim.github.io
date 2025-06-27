@@ -36,6 +36,12 @@ importers:
       '@eslint/eslintrc':
         specifier: ^3.3.1
         version: 3.3.1
+      '@fontsource/biz-udpgothic':
+        specifier: ^5.2.6
+        version: 5.2.6
+      '@fontsource/open-sans':
+        specifier: ^5.2.6
+        version: 5.2.6
       '@tailwindcss/postcss':
         specifier: ^4.1.11
         version: 4.1.11
@@ -151,6 +157,12 @@ packages:
   '@eslint/plugin-kit@0.3.3':
     resolution: {integrity: sha512-1+WqvgNMhmlAambTvT3KPtCl/Ibr68VldY2XY40SL1CE0ZXiakFR/cbTspaF5HsnpDMvcYYoJHfl4980NBjGag==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+
+  '@fontsource/biz-udpgothic@5.2.6':
+    resolution: {integrity: sha512-L5N/ngx9zVCEHhF5bAKnhzkXlNIKRqhA0rR03Gmmmhwn+FF3ShQrIDGshXMJjw5G2iBZvc1DDzYDj6ShNY0AvA==}
+
+  '@fontsource/open-sans@5.2.6':
+    resolution: {integrity: sha512-mnfnUmBWQ+J220gqbibbzmKcc1kawV+lb3/Pspzu+Opnxza12oUffIg0ufG8g+3j1fnSznEWgyNV40MjtmJj6g==}
 
   '@fortawesome/fontawesome-common-types@6.7.2':
     resolution: {integrity: sha512-Zs+YeHUC5fkt7Mg1l6XTniei3k4bwG/yo3iFUtZWd/pMx9g3fdvkSK9E0FOC+++phXOka78uJcYb8JaFkW52Xg==}
@@ -2098,6 +2110,10 @@ snapshots:
     dependencies:
       '@eslint/core': 0.15.1
       levn: 0.4.1
+
+  '@fontsource/biz-udpgothic@5.2.6': {}
+
+  '@fontsource/open-sans@5.2.6': {}
 
   '@fortawesome/fontawesome-common-types@6.7.2': {}
 

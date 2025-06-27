@@ -1,18 +1,14 @@
 import type { Metadata } from "next";
-import {
-  BIZ_UDPGothic,
-  Open_Sans
-} from "next/font/google";
 
-//import ClientLayout from "@/components/transition/ClientLayout";
+import "@/app/font";
 import "@/app/globals.css";
 
 export const metadata: Metadata = {
   title       : "loser4dim",
   description : "loser4dim Portfolio",
   metadataBase: new URL("https://loser4dim.github.io"),
-  keywords: ["loser4dim", "DJ", "出演"],
-  robots: {
+  keywords    : ["loser4dim", "DJ", "出演"],
+  robots      : {
     index       : true,
     follow      : true,
     nocache     : true,
@@ -23,7 +19,7 @@ export const metadata: Metadata = {
     description: "loser4dim DJ Portfolio",
     url        : "https://loser4dim.github.io",
     siteName   : "loser4dim Portfolio",
-    images: [
+    images     : [
       {
         url   : "/loser4dim/OGP.webp",
         width : 1200,
@@ -31,53 +27,35 @@ export const metadata: Metadata = {
       }
     ],
     locale: "ja_JP",
-    type  : "website",
+    type  : "website"
   },
   twitter: {
     card       : "summary_large_image",
     title      : "loser4dim",
     description: "loser4dim Portfolio",
-    images     : ["/loser4dim/OGP.webp"],
+    images     : ["/loser4dim/TwitterOGP.png"]
   }
 }
 
-//Base Japanese Font
-const fontBaseJp = BIZ_UDPGothic(
-  {
-    subsets : ["cyrillic", "greek-ext", "latin", "latin-ext"],
-    weight  : ["400", "700"],
-    variable: "--font-base-jp",
-    display : "swap",
-  }
-);
-
-//Base English Font
-const fontBaseEn = Open_Sans(
-  {
-    subsets : ["cyrillic", "greek-ext", "latin", "latin-ext", "cyrillic-ext", "greek", "hebrew", "math", "symbols", "vietnamese"],
-    weight  : ["300", "400", "500", "600", "700", "800"],
-    variable: "--font-base-en",
-    display : "swap",
-  }
-);
-
-
-
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  const fonts = `${fontBaseJp.variable} ${fontBaseEn.variable}`;
-
   return (
-    <html lang="ja" className={fonts}>
-      <body className="
-        bg-[radial-gradient(circle,#39C5BB_0%,transparent_10%)]
-        bg-[size:1rem_1rem]
-        bg-neutral-800
-        text-neutral-200"
-      >
-        
-          {children}
-        
+    <html lang="ja">
+      <body className="bg-red-500 text-yellow-300 font-sans">
+       <div>
+        hello
+       </div>
+       {children}
       </body>
     </html>
   );
 }
+
+/*
+<body className="
+        bg-[radial-gradient(circle,#39C5BB_0%,transparent_10%)]
+        bg-[size:1rem_1rem]
+        bg-black-500
+        text-neutral-200
+        font-sans"
+      >
+*/
