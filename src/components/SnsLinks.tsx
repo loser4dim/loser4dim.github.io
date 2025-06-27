@@ -1,8 +1,8 @@
 "use client";
 
 import type { IconDefinition } from "@fortawesome/fontawesome-svg-core";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMixcloud, faBandcamp, faSoundcloud, faBluesky, faXTwitter, faInstagram, faTwitch } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 
 function IconDiv({ icon }: { icon: IconDefinition }) {

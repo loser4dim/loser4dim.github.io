@@ -10,7 +10,9 @@
 // import { compositionHistory } from "@/data/CompositionHistory";
 
 
-
+export default function About() {
+  return (<main>ここよここ</main>)
+}
 
 
 
@@ -73,4 +75,4 @@
 //     </main>
 //   );
 // }
-// export const dynamic = "force-static";
+export const dynamic = "force-static";
