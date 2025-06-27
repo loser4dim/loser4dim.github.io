@@ -4,7 +4,7 @@ import {
   Open_Sans
 } from "next/font/google";
 
-import ClientLayout from "@/components/transition/ClientLayout";
+//import ClientLayout from "@/components/transition/ClientLayout";
 import "@/app/globals.css";
 
 export const metadata: Metadata = {
@@ -74,9 +74,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         bg-neutral-800
         text-neutral-200"
       >
-        <ClientLayout>
+        
           {children}
-        </ClientLayout>
+        
       </body>
     </html>
   );
