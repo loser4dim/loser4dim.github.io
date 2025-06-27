@@ -6,13 +6,13 @@
       "dom.iterable",
       "esnext"
     ],
-    "allowJs": true,
-    "skipLibCheck": true,
     "strict": true,
     "noEmit": true,
-    "esModuleInterop": true,
     "module": "esnext",
     "moduleResolution": "bundler",
+    "allowJs": false,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
@@ -31,8 +31,6 @@
   "include": [
     "**/*.ts",
     "**/*.tsx",
-    "docs/types/**/*.ts",
-    "next-env.d.ts",
     ".next/types/**/*.ts"
   ],
   "exclude": [
