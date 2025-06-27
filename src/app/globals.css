@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=BIZ+UDPGothic&display=swap");
+
 @import "tailwindcss";
 
 @theme inline {
-  --font-jp: var(--font-base-jp);
-  --font-en: var(--font-base-en);
+  --font-base: "Open Sans", "BIZ UDPGothic";
   --color-bg       : #1A1A1D;
   --color-text     : #C5C6C7;
   --color-highlight: #39C5BB;

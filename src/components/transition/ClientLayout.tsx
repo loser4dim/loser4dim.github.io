@@ -8,8 +8,8 @@ export default function ClientLayoutWrapper({ children }: { children: React.Reac
   return (
     <PageTransitionProvider>
       <PageLoadWatcher />
-        <Mask />
-        {children}
+      <Mask />
+      {children}
     </PageTransitionProvider>
   );
 }
