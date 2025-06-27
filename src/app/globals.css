@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=BIZ+UDPGothic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kapakana&display=swap");
 
 @import "tailwindcss";
 
 @theme inline {
   --font-base: "Open Sans", "BIZ UDPGothic";
+  --font-love: "Kapakana";
   --color-bg       : #1A1A1D;
   --color-text     : #C5C6C7;
   --color-highlight: #39C5BB;

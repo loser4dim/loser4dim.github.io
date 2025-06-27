@@ -75,8 +75,8 @@ export default function SkillIcons() {
   ];
 
   return (
-    <section className="w-4/5 max-w-2xl text-center">
-      <div className="flex flex-wrap gap-7 justify-center text-3xl text-stone-300">
+    <section className="w-full max-w-2xl text-center">
+      <div className="flex flex-wrap gap-6 justify-center text-2xl text-stone-300">
         {
           skills.map(
             (skill, i) => (

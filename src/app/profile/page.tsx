@@ -23,19 +23,19 @@ export default function Profile() {
         />
       </TransitionLink>
 
-      <section className="text-center max-w-2xl">
-        <h1 className="text-2xl font-bold mb-4">
+      <section className="max-w-2xl">
+        <h1 className="text-2xl text-center font-bold mb-4">
           loser4dim
         </h1>
         <div className="text-left">
           <p>
             2022年3月にVR-DJとして活動開始。
             &quot;今日のジャンルですか？DJがチルと言えばチルですね。&quot; 主宰。
-            個性的アーティスト集団 &quot;BUG COLLECTIVE&quot;、VJ初心者メインイベント&quot;VJしたいっ&quot;，ダンスクラブ &quot;CLUB SILHOUETTE&quot; にレギュラーDJとして所属。
+            個性的アーティスト集団 &quot;BUG COLLECTIVE&quot;、VJ初心者メインイベント&quot;VJしたいっ&quot;、VRダンスクラブ &quot;CLUB SILHOUETTE&quot; にレギュラーDJとして所属。
             VRChatでのクラブイベントに誘われたのがきっかけでクラブミュージックと出会い、そのときの感動を伝えていこうと自身もDJを始める。
           </p>
           <p>
-            &quot; 𝓗𝓪𝓹𝓹𝔂 - 𝓕𝓾𝓷𝓷𝔂 - 𝓒𝓻𝓪𝔃𝔂 - 𝔀𝓲𝓽𝓱 𝓛𝓞𝓥𝓔 &quot; を信条に、ジャンルを問わず自由気ままなDJを展開する。
+            &quot;<span className="text-xl font-love">Happy - Funny - Crazy - with LOVE</span> &quot; を信条に、ジャンルを問わず自由気ままなDJを展開する。
           </p>
         </div>
       </section>
