@@ -1,13 +1,11 @@
 import Image from "next/image";
 // import { Suspense } from "react";
-
 // import { CompositionAccordion } from "@/components/about/accordion/CompositionAccordion";
 // import DJ_Accordion from "@/components/about/accordion/DjAccordion";
 // import OrganizeAccordion from "@/components/about/accordion/OrganizeAccordion";
 // import StaffAccordion from "@/components/about/accordion/StaffAccordion";
- 
-import TransitionLink from "@/components/transition/TransitionLink";
 import SkillIcons from "@/components/profile/SkillIcons";
+import TransitionLink from "@/components/transition/TransitionLink";
 // import { compositionHistory } from "@/data/CompositionHistory";
 
 export default function Profile() {

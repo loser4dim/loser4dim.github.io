@@ -34,9 +34,10 @@ export default await (
           "perfectionist/sort-imports": [
             "error",
             {
-              type  : "natural",
-              order : "asc",
-              groups: [
+              type           : "natural",
+              order          : "asc",
+              newlinesBetween: "never",
+              groups         : [
                 ["builtin", "external"],
                 ["internal", "parent", "sibling", "index"]
               ]

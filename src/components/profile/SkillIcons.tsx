@@ -1,19 +1,19 @@
 "use client";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTableCells }    from "@fortawesome/free-solid-svg-icons";
 import {
-  faGithub,
   faDocker,
-  faReact,
-  faPython,
+  faGit,
   faGitlab,
-  faUnity,
-  faUbuntu,
-  faNodeJs,
+  faGithub,
   faJenkins,
-  faGit
+  faNodeJs,
+  faPython,
+  faReact,
+  faUbuntu,
+  faUnity
 } from "@fortawesome/free-brands-svg-icons";
+import { faTableCells }    from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function SkillIcons() {
   const skills = [
