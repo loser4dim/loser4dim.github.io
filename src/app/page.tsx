@@ -20,7 +20,7 @@ export default function Home() {
           />
         </TransitionLink>
       </div>
-      <div className="flex max-w-4/5">
+      <div className="flex max-w-screen">
         <SnsLinks />
       </div>
     </main>

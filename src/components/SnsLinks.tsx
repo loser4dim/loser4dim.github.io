@@ -7,7 +7,7 @@ import Image from "next/image";
 
 function IconDiv({ icon }: { icon: IconDefinition }) {
   return (
-    <div className="relative w-16 h-16 flex items-center justify-center">
+    <div className="relative w-1/4 h-1/4 min-w-16 min-h-16 flex items-center justify-center">
       <FontAwesomeIcon icon={icon} className="text-5xl" />
     </div>
   );
@@ -15,7 +15,7 @@ function IconDiv({ icon }: { icon: IconDefinition }) {
 
 function ImageDev({ src, alt }: { src: string; alt: string }) {
   return (
-    <div className="relative w-16 h-16">
+    <div className="relative w-1/4 h-1/4 min-w-16 min-h-16">
         <Image
           src={src}
           alt={alt}
