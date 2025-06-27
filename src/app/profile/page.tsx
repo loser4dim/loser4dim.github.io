@@ -5,8 +5,9 @@ import Image from "next/image";
 // import DJ_Accordion from "@/components/about/accordion/DjAccordion";
 // import OrganizeAccordion from "@/components/about/accordion/OrganizeAccordion";
 // import StaffAccordion from "@/components/about/accordion/StaffAccordion";
-// import SkillIcons from "@/components/about/SkillIcons";
+ 
 import TransitionLink from "@/components/transition/TransitionLink";
+import SkillIcons from "@/components/profile/SkillIcons";
 // import { compositionHistory } from "@/data/CompositionHistory";
 
 export default function Profile() {
@@ -64,7 +65,9 @@ export default function Profile() {
 <Suspense fallback={<p>読み込み中にゃ……🐾</p>}>
       <StaffAccordion />
       </Suspense>
-      <SkillIcons /> */}
+       */}
+
+      <SkillIcons />
     </main>
   );
 }
