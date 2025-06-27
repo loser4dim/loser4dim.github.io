@@ -1,8 +1,7 @@
 import Image from "next/image";
-import Link from "next/link";
 
 import SnsLinks from "@/components/SnsLinks";
-//import TransitionLink from "@/components/transition/TransitionLink";
+import TransitionLink from "@/components/transition/TransitionLink";
 
 export default function Home() {
   return (
@@ -11,7 +10,7 @@ export default function Home() {
         loser4dim Profile
       </h1>
       <div className="flex items-center justify-center max-h-screen max-w-4/5">
-        <Link href="/profile" className="block">
+        <TransitionLink href="/profile" className="block">
           <Image
             src="/loser4dim/Logo.webp"
             alt="loser4dim Logo Picture"
@@ -19,7 +18,7 @@ export default function Home() {
             height={1835}
             className="object-contain max-w-screen max-h-screen"
           />
-        </Link>
+        </TransitionLink>
       </div>
       <div className="flex max-w-4/5">
         <SnsLinks />
