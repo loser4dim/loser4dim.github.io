@@ -1,6 +1,17 @@
 @import "tailwindcss";
 
-/*.mask-overlay {
+@theme inline {
+  --font-jp: var(--font-base-jp);
+  --font-en: var(--font-base-en);
+  --color-bg       : #1A1A1D;
+  --color-text     : #C5C6C7;
+  --color-highlight: #39C5BB;
+}
+
+/*
+
+
+.mask-overlay {
   position        : fixed;
   inset           : 0;
   background-color: #0F2E2D;
