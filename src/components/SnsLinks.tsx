@@ -16,13 +16,13 @@ function IconDiv({ icon }: { icon: IconDefinition }) {
 function ImageDev({ src, alt }: { src: string; alt: string }) {
   return (
     <div className="relative w-1/4 h-1/4 min-w-16 min-h-16">
-        <Image
-          src={src}
-          alt={alt}
-          fill
-          className="object-contain"
-        />
-      </div>
+      <Image
+        src={src}
+        alt={alt}
+        fill
+        className="object-contain"
+      />
+    </div>
   );
 }
 
@@ -53,19 +53,19 @@ const snsLinks = [
     icon: (<ImageDev src="/icons/VRChatLogo.svg" alt="VRChat" />)
   },
   {
-    name: "mixi2",
-    href: "https://mixi.social/@loser4dim/",
-    icon: (<ImageDev src="/icons/mixi2.webp" alt="mixi2" />)
-  },
-  {
     name: "Misskey.io",
     href: "https://misskey.io/@loser4dim/",
-    icon: (<ImageDev src="/icons/Misskey.webp" alt="Misskey.io" />)
+    icon: (<ImageDev src="/icons/Misskey.avif" alt="Misskey.io" />)
   },
   {
-    name: "にりらみすきー部",
-    href: "https://misskey.niri.la/@loser4dim/",
-    icon: (<ImageDev src="/icons/Misskey.webp" alt="Niri-la-Misskey" />)
+    name: "mixi2",
+    href: "https://mixi.social/@loser4dim/",
+    icon: (<ImageDev src="/icons/mixi2.avif" alt="mixi2" />)
+  },
+  {
+    name: "ToneDen",
+    href: "https://www.toneden.io/loser4dim/",
+    icon: (<ImageDev src="/icons/ToneDen.avif" alt="ToneDen" />)
   },
   {
     name: "Bluesky",
