@@ -11,7 +11,7 @@ export default function Home() {
       <div className="flex items-center justify-center max-h-screen max-w-4/5">
         <TransitionLink href="/profile" className="block">
           <Image
-            src="/loser4dim/Logo.webp"
+            src="/loser4dim/Logo.avif"
             alt="loser4dim Logo Picture"
             width={1247}
             height={1835}

@@ -17,7 +17,7 @@ const metadataBase: Metadata = {
     siteName   : "loser4dim Portfolio",
     images     : [
       {
-        url   : "/loser4dim/OGP.webp",
+        url   : "/loser4dim/OGP.avif",
         width : 1200,
         height: 630
       }

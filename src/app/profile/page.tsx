@@ -13,7 +13,7 @@ export default function Profile() {
     <main className="flex flex-col items-center px-4 py-12 gap-12">
       <TransitionLink href="/" className="w-72 h-72 relative rounded-full overflow-hidden">
         <Image
-          src="/loser4dim/ArtistPicture.webp"
+          src="/loser4dim/ArtistPicture.avif"
           alt="loser4dim Artist Picture"
           fill
           //width={1920}
