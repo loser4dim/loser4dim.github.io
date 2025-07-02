@@ -72,19 +72,20 @@ export const PageTransitionProvider = ({ children }: { children: React.ReactNode
   );
 
   useEffect(() => {
-  if (phase !== "entering") return;
-
-  const currentPath = pathname;
-
-  if (currentPath !== prevPath) {
-    if (pendingCompletion) {
-      setPhase("exiting");
-      setPendingCompletion(false);
-    } else {
-      setPhase("loading");
+    if (phase !== "entering") {
+      return;
     }
-  }
-}, [pathname, phase, prevPath, pendingCompletion]);
+    const currentPath = pathname;
+
+    if (currentPath !== prevPath) {
+      if (pendingCompletion) {
+        setPhase("exiting");
+        setPendingCompletion(false);
+      } else {
+        setPhase("loading");
+      }
+    }
+  }, [pathname, phase, prevPath, pendingCompletion]);
 
   const completeLoading = () => {
     if (phase === "loading") {
@@ -112,6 +113,16 @@ export const PageTransitionProvider = ({ children }: { children: React.ReactNode
     },
     [phase]
   );
+
+  useEffect(() => {
+    if (
+      phase !== "idle" &&
+      !nextHref &&
+      phase !== "entering"
+    ) {
+      setPhase("idle");
+    }
+  }, [pathname, phase, nextHref]);
 
   return (
     <PageTransitionContext.Provider

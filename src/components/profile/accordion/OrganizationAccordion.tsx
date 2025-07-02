@@ -1,15 +1,15 @@
 import AccordionSection from "./AccordionSection";
 import TransitionLink from "@/components/transition/TransitionLink";
-import { DjIndex } from "@/data/dj/EventIndex";
+import { OrganizationIndex } from "@/data/organization/EventIndex";
 import type { EventYearGroup } from "@/types/profile/AccordionIndex";
 
-export default function DjAccordion() {
+export default function OrganizationAccordion() {
   return (
     <section className="text-left space-y-6">
       {
-        DjIndex.map(
+        OrganizationIndex.map(
           (yearGroup: EventYearGroup) => (
-            <AccordionSection key={yearGroup.year} category="dj" year={yearGroup.year}>
+            <AccordionSection key={yearGroup.year} category="organization" year={yearGroup.year}>
               {
                 yearGroup.months.map(
                   (month) => (
@@ -33,7 +33,7 @@ export default function DjAccordion() {
                                 {
                                   event.slug ? (
                                     <TransitionLink
-                                      href={`/dj/${event.slug}`}
+                                      href={`/organization/${event.slug}`}
                                       className="
                                         text-sm
                                         relative
