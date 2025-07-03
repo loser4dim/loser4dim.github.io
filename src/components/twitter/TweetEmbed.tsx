@@ -20,8 +20,8 @@ interface TwitterTweetEmbedProps {
   tweetId: string;
   options?: Record<string, any>;
   placeholder?: React.ReactNode;
-  onLoad?: (element: HTMLElement) => void;
-  onError?: () => void;
+  onLoad?: (id: string) => void;   // ← tweetId を渡すように変更
+  onError?: (id: string) => void;  // ← tweetId を渡すように変更
 }
 
 export default function TwitterTweetEmbed({
@@ -47,14 +47,14 @@ export default function TwitterTweetEmbed({
 
       window.twttr.widgets
         .createTweet(tweetId, ref.current, options)
-        .then((element) => {
+        .then(() => {
           if (!mounted) return;
           setLoaded(true);
-          onLoad?.(element);
+          onLoad?.(tweetId); // ✅ tweetId を渡す
         })
         .catch((err) => {
           console.error("Tweet render error:", err);
-          onError?.();
+          onError?.(tweetId); // ✅ tweetId を渡す
         });
     };
 
@@ -69,7 +69,7 @@ export default function TwitterTweetEmbed({
       clearInterval(checkReady);
       if (!triedRef.current) {
         console.warn("widgets.js timeout or blocked");
-        onError?.();
+        onError?.(tweetId); // ✅ timeout時もtweetId渡す
       }
     }, 5000);
 
@@ -83,7 +83,10 @@ export default function TwitterTweetEmbed({
   return (
     <>
       {!loaded && placeholder}
-      <div ref={ref} className="flex justify-center min-h-[400px]" />
+      <div
+        ref={ref}
+        className="flex justify-center min-h-[400px] mx-auto w-full max-w-[350px] px-2"
+      />
     </>
   );
 }

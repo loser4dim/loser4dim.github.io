@@ -21,28 +21,30 @@ export default function TweetList({ ids }: { ids: string[] }) {
           <TweetEmbed
             tweetId={id}
             placeholder={
-              <p className="text-center text-sm text-gray-400">
-                Post loading...
-              </p>
+              <div className="flex items-center justify-center min-h-[400px]">
+                {fallbackIds.includes(id) ? (
+                  <p className="text-center text-sm text-highlight">
+                    Failed to load the post. You can view this post{" "}
+                    <a
+                      href={`https://twitter.com/i/status/${id}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underline hover:opacity-70"
+                    >
+                      here
+                    </a>
+                    .
+                  </p>
+                ) : (
+                  <p className="text-center text-sm text-gray-400">
+                    Post loading...
+                  </p>
+                )}
+              </div>
             }
-            onLoad={() => handleLoad(id)}
-            onError={() => handleError(id)}
+            onLoad={handleLoad}   // ✅ 直接渡す
+            onError={handleError} // ✅ 直接渡す
           />
-
-          {fallbackIds.includes(id) && (
-            <p className="text-center text-sm text-highlight mt-2">
-              Failed to load the post. You can view this post{" "}
-              <a
-                href={`https://twitter.com/i/status/${id}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline hover:opacity-70"
-              >
-                here
-              </a>
-              .
-            </p>
-          )}
         </div>
       ))}
     </>
