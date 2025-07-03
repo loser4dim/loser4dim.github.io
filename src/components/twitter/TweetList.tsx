@@ -1,7 +1,7 @@
 "use client";
 
-import TweetEmbed from "@/components/twitter/TweetEmbed";
 import { useState, useCallback } from "react";
+import TweetEmbed from "@/components/twitter/TweetEmbed";
 
 export default function TweetList({ ids }: { ids: string[] }) {
   const [fallbackIds, setFallbackIds] = useState<string[]>([]);

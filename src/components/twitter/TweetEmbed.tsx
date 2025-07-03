@@ -78,7 +78,7 @@ export default function TwitterTweetEmbed({
       clearInterval(checkReady);
       clearTimeout(timeout);
     };
-  }, [tweetId]);
+  }, [tweetId, onLoad, onError, options]);
 
   return (
     <>
