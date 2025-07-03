@@ -21,6 +21,7 @@ interface TwitterTweetEmbedProps {
   options?: Record<string, any>;
   placeholder?: React.ReactNode;
   onLoad?: (element: HTMLElement) => void;
+  onError?: (error: unknown) => void;
 }
 
 export default function TwitterTweetEmbed({
@@ -28,6 +29,7 @@ export default function TwitterTweetEmbed({
   options,
   placeholder,
   onLoad,
+  onError,
 }: TwitterTweetEmbedProps) {
   const ref = useRef<HTMLDivElement>(null);
   const [loaded, setLoaded] = useState(false);
@@ -36,9 +38,7 @@ export default function TwitterTweetEmbed({
     let mounted = true;
 
     const renderTweet = () => {
-      if (!mounted || !ref.current || !window.twttr?.widgets?.createTweet) {
-        return;
-      }
+      if (!mounted || !ref.current || !window.twttr?.widgets?.createTweet) return;
 
       window.twttr.widgets
         .createTweet(tweetId, ref.current, options)
@@ -47,10 +47,12 @@ export default function TwitterTweetEmbed({
           setLoaded(true);
           onLoad?.(element);
         })
-        .catch((err) => console.error("Tweet render error:", err));
+        .catch((err) => {
+          console.error("Tweet render error:", err);
+          onError?.(err); // 🔥 エラー通知追加
+        });
     };
 
-    // ✅ scriptはlayout.tsxで読み込まれる前提
     if (window.twttr?.widgets?.createTweet) {
       renderTweet();
     } else {
@@ -60,14 +62,13 @@ export default function TwitterTweetEmbed({
           renderTweet();
         }
       }, 100);
-      // タイムアウト防止（最大5秒）
       setTimeout(() => clearInterval(checkInterval), 5000);
     }
 
     return () => {
       mounted = false;
     };
-  }, [tweetId, options, onLoad]);
+  }, [tweetId, options, onLoad, onError]);
 
   return (
     <>
