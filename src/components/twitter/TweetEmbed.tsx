@@ -21,7 +21,6 @@ interface TwitterTweetEmbedProps {
   options?: Record<string, any>;
   placeholder?: React.ReactNode;
   onLoad?: (element: HTMLElement) => void;
-  onError?: (error: unknown) => void;
 }
 
 export default function TwitterTweetEmbed({
@@ -29,7 +28,6 @@ export default function TwitterTweetEmbed({
   options,
   placeholder,
   onLoad,
-  onError,
 }: TwitterTweetEmbedProps) {
   const ref = useRef<HTMLDivElement>(null);
   const [loaded, setLoaded] = useState(false);
@@ -37,11 +35,22 @@ export default function TwitterTweetEmbed({
   useEffect(() => {
     let mounted = true;
 
+    const loadScript = async () => {
+      if (typeof window === "undefined") return;
+
+      if (!window.twttr) {
+        const script = document.createElement("script");
+        script.src = "https://platform.twitter.com/widgets.js";
+        script.async = true;
+        script.onload = renderTweet;
+        document.body.appendChild(script);
+      } else {
+        renderTweet();
+      }
+    };
+
     const renderTweet = () => {
       if (!mounted || !ref.current || !window.twttr?.widgets?.createTweet) return;
-
-      // 🧼 描画前に中をクリアして、Tweet増殖を防ぐにゃ
-      ref.current.innerHTML = "";
 
       window.twttr.widgets
         .createTweet(tweetId, ref.current, options)
@@ -50,28 +59,15 @@ export default function TwitterTweetEmbed({
           setLoaded(true);
           onLoad?.(element);
         })
-        .catch((err) => {
-          console.error("Tweet render error:", err);
-          onError?.(err);
-        });
+        .catch((err) => console.error("Tweet render error:", err));
     };
 
-    if (window.twttr?.widgets?.createTweet) {
-      renderTweet();
-    } else {
-      const checkInterval = setInterval(() => {
-        if (window.twttr?.widgets?.createTweet) {
-          clearInterval(checkInterval);
-          renderTweet();
-        }
-      }, 100);
-      setTimeout(() => clearInterval(checkInterval), 5000);
-    }
+    loadScript();
 
     return () => {
       mounted = false;
     };
-  }, [tweetId]); // ✅ options や onLoad など副作用の原因を依存配列から外すにゃ
+  }, [tweetId, options, onLoad]);
 
   return (
     <>
