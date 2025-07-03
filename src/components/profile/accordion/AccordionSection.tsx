@@ -14,12 +14,20 @@ type Props = {
 };
 
 export default function AccordionSection({ category, year, children }: Props) {
-  const searchParams = useSearchParams();
-  const router       = useRouter();
+  const searchParams            = useSearchParams();
+  const router                  = useRouter();
+  const [hydrated, setHydrated] = useState(false);
 
   const openValue = searchParams?.get("open") ?? null;
   const openKey   = `${category}-${year}`;
   const isOpen    = (openValue === openKey);
+
+  useEffect(
+    () => {
+      setHydrated(true);
+    },
+    []
+  );
 
   const handleToggle = () => {
     const safeParams = searchParams ? new URLSearchParams(searchParams.toString()) : new URLSearchParams();
@@ -55,7 +63,7 @@ export default function AccordionSection({ category, year, children }: Props) {
     
       <AnimatePresence initial={false}>
         {
-          isOpen && (
+          hydrated && isOpen && (
             <motion.div
               key="content"
               initial={{ height: 0, opacity: 0 }}
