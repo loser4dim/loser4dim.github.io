@@ -18,6 +18,11 @@ export const DjIndex: EventYearGroup[] = [
         month : "3",
         events: [
           {
+            day  : "1",
+            title: "あきぺ&とかげ誕生前夜祭",
+            slug : "akipe-tokage-birthday-1"
+          },
+          {
             day  : "3",
             title: "DJなんもわからん EP.7",
             slug : ""

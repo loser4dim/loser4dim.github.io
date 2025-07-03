@@ -229,9 +229,13 @@ export default async function Page({ params }: { params: { slug: string } }) {
         
 
       <div>
-        <h2 className="text-xl text-center mb-2">
-          Timetable
-        </h2>
+        {
+          (event.timetable || event.timeSlot) && (
+            <h2 className="text-xl text-center mb-2">
+              Timetable
+            </h2>
+          )
+        }
         {
           event.timetable ? (
             <div className="flex justify-center">

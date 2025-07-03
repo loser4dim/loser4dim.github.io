@@ -8,9 +8,9 @@ export type EventDetail = {
   title: string;
 
   date : {
-    year : string;
-    month: string;
-    day  : string;
+    year : number;
+    month: number;
+    day  : number;
   };
 
   time: {

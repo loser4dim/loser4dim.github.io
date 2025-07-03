@@ -1,10 +1,12 @@
-import { event as djV1 } from "@/data/dj/details/2022/Virtual1";
+import { event as djV00 } from "@/data/dj/details/2022/Virtual00";
+import { event as djV01 } from "@/data/dj/details/2022/Virtual01";
 import { EventDetail } from "@/types/EventDetail";
 
 //import { event as djV2 } from "@/data/dj/details/2022/DJVitrual2";
 
 export const allPlayEvents: Record<string, EventDetail> = {
-  practice: djV1
+  "practice": djV00,
+  "akipe-tokage-birthday-1": djV01
 };
 
 

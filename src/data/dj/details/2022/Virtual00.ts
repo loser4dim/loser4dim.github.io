@@ -1,12 +1,13 @@
 import { EventDetail } from "@/types/EventDetail";
 
 export const event: EventDetail = {
+  
   slug : "practice",
   title: "第一回 DJガチ初心者練習会",
   date : {
-    year : "2022",
-    month: "2",
-    day  : "12"
+    year : 2022,
+    month: 2,
+    day  : 12
   },
   time: {
     start: "13:00",
@@ -23,7 +24,7 @@ export const event: EventDetail = {
   flyer: {
     width : 960,
     height: 720,
-    image : "/dj/2022/djV1.avif"
+    image : "/dj/2022/djV00.avif"
   },
   timeSlot: [
     {
