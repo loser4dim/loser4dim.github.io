@@ -1,7 +1,8 @@
-import Script from "next/script";
-import "@/app/globals.css";
 import metadataBase from "@/app/metadata"
+import "@/app/globals.css";
 import ClientLayoutWrapper from "@/components/transition/ClientLayout"
+
+import Script from "next/script";
 
 export const metadata = metadataBase;
 
