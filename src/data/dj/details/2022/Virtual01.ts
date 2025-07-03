@@ -10,7 +10,7 @@ export const event: EventDetail = {
   },
   time: {
     start: "22:00",
-    end  : "26:00"
+    end  : "24:00"
   },
   place: {
     name    : "YOSSY DJ ISLAND",
@@ -35,6 +35,21 @@ export const event: EventDetail = {
       url : "https://tokage-lab.com"
     }
   ],
+  support : [
+    {
+      role  : "DJ",
+      staffs: [
+        {
+          name: "あきぺ",
+          url : "https://linktr.ee/vrdjakipe"
+        },
+        {
+          name: "とかげ",
+          url : "https://tokage-lab.com"
+        }
+      ]
+    }
+  ],
   announcements: [
     {
       sns: "𝕏-Twitter",
@@ -47,37 +62,37 @@ export const event: EventDetail = {
       index : 1,
       artist: "Miniland",
       track : "My Life",
-      url   : ""
+      url   : "https://aviencloudrecords.bandcamp.com/track/my-life"
     },
     {
       index : 2,
       artist: "HaL_Bits",
       track : "雪白狐",
-      url   : ""
+      url   : "https://halbits.bandcamp.com/track/-"
     },
     {
       index : 3,
       artist: "Kenichi Chiba feat. 菅原圭",
       track : "nomophobia",
-      url   : ""
+      url   : "https://diversesystem.bandcamp.com/track/nomophobia"
     },
     {
       index : 4,
       artist: "good-cool feat. 貴様シスターズ",
-      track : "Give Me \"\"THAT\"\"",
-      url   : ""
+      track : "Give Me \"THAT\"",
+      url   : "https://diversesystem.bandcamp.com/track/give-me-that"
     },
     {
       index : 5,
       artist: "ag feat. 倉先",
       track : "afternoon",
-      url   : ""
+      url   : "https://strlabel.bandcamp.com/track/afternoon"
     },
     {
       index : 6,
       artist: "Musicarus",
       track : "Longing for Winter",
-      url   : ""
+      url   : "https://diversesystem.bandcamp.com/track/longing-for-winter"
     },
     {
       index : 7,
@@ -95,37 +110,37 @@ export const event: EventDetail = {
       index : 9,
       artist: "Carpainter",
       track : "Returning",
-      url   : ""
+      url   : "https://carpainter.bandcamp.com/track/returning"
     },
     {
       index : 10,
       artist: "livetune feat. 初音ミク",
       track : "ストロボナイツ",
-      url   : ""
+      url   : "https://www.jvcmusic.co.jp/-/Discography/A021844/VICL-70077.html"
     },
     {
       index : 11,
-      artist: "uno feat. Chiyoko",
+      artist: "uno feat. ちよこ",
       track : "#自宅ミュージックオールナイトロング",
-      url   : ""
+      url   : "https://iosys.bandcamp.com/track/home-music-all-night-long"
     },
     {
       index : 12,
       artist: "PenguinDance",
       track : "寝逃げでリセット！おふとん120%みっくす",
-      url   : ""
+      url   : "https://www.tumblr.com/tsukasarecords/45666714936/tr-022-つかさ-is-txurutxuru-penguindance-01"
     },
     {
       index : 13,
       artist: "livetune feat. 初音ミク",
       track : "Yellow",
-      url   : ""
+      url   : "https://tower.jp/item/2715000"
     },
     {
       index : 14,
       artist: "BUMP OF CHICKEN feat. 初音ミク",
       track : "ray -livetune cover-",
-      url   : ""
+      url   : "https://tower.jp/item/3650578"
     }
   ],
   galleryTwitter: [

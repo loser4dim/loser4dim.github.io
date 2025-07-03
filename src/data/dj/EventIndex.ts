@@ -25,7 +25,7 @@ export const DjIndex: EventYearGroup[] = [
           {
             day  : "3",
             title: "DJなんもわからん EP.7",
-            slug : ""
+            slug : "dj-unknown-1"
           },
           {
             day  : "13",

@@ -15,8 +15,8 @@ function timeToMinutes(time: string): number {
   return h * 60 + m;
 }
 
-function timeToPosition(time: string): number {
-  const startMin = timeToMinutes("13:00");
+function timeToPosition(time: string, start: string): number {
+  const startMin = timeToMinutes(start);
   return (timeToMinutes(time) - startMin) * 2;
 }
 
@@ -290,7 +290,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
                           key={i}
                           className="absolute bg-neutral-600 rounded-md px-4 mx-auto"
                           style={{
-                            top: timeToPosition(slot.start)+5,
+                            top: timeToPosition(slot.start, event.time.start)+5,
                             height: timeDiffToHeight(slot.start, slot.end)-10,
                             left: "0",
                             right: "0",
