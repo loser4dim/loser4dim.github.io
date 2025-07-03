@@ -49,7 +49,7 @@ export default function TwitterTweetEmbed({
         })
         .catch((err) => {
           console.error("Tweet render error:", err);
-          onError?.(err); // 🔥 エラー通知追加
+          onError?.(err);
         });
     };
 
