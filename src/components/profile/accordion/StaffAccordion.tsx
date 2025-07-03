@@ -1,7 +1,7 @@
 import AccordionSection from "./AccordionSection";
 import TransitionLink from "@/components/transition/TransitionLink";
 import { StaffIndex } from "@/data/staff/EventIndex";
-import type { EventYearGroup } from "@/types/profile/AccordionIndex";
+import type { EventYearGroup } from "@/types/AccordionIndex";
 
 export default function StaffAccordion() {
   return (

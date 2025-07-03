@@ -1,4 +1,4 @@
-import type { EventYearGroup } from "@/types/profile/AccordionIndex";
+import type { EventYearGroup } from "@/types/AccordionIndex";
 
 export const DjIndex: EventYearGroup[] = [
   {
@@ -20,7 +20,7 @@ export const DjIndex: EventYearGroup[] = [
           {
             day  : "3",
             title: "DJなんもわからん EP.7",
-            slug : "dj-unknown-1"
+            slug : ""
           },
           {
             day  : "13",
@@ -1300,7 +1300,7 @@ export const DjIndex: EventYearGroup[] = [
           {
             day  : "28",
             title: "CLUB DEEP BLUE",
-            slug : "club-deep-blue"
+            slug : ""
           },
           {
             day  : "29",

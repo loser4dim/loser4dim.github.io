@@ -1,4 +1,4 @@
-import type { EventYearGroup } from "@/types/profile/AccordionIndex";
+import type { EventYearGroup } from "@/types/AccordionIndex";
 
 export const OrganizationIndex: EventYearGroup[] = [
   {

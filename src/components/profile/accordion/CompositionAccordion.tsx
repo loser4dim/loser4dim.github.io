@@ -1,6 +1,6 @@
 import AccordionSection from "./AccordionSection";
 import { CompositionIndex } from "@/data/composition/CompositionIndex";
-import type { CompositionYearGroup } from "@/types/profile/AccordionIndex";
+import type { CompositionYearGroup } from "@/types/AccordionIndex";
 
 export default function CompositionAccordion() {
   return (

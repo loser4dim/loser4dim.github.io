@@ -1,4 +1,4 @@
-import type { CompositionYearGroup } from "@/types/profile/AccordionIndex";
+import type { CompositionYearGroup } from "@/types/AccordionIndex";
 
 export const CompositionIndex: CompositionYearGroup[] = [
   {

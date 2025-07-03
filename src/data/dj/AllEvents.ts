@@ -1,10 +1,11 @@
-import { event as djV1 } from "@/data/dj/details/2022/Virtual1.ts";
+import { event as djV1 } from "@/data/dj/details/2022/Virtual1";
+import { EventDetail } from "@/types/EventDetail";
+
 //import { event as djV2 } from "@/data/dj/details/2022/DJVitrual2";
 
-export const AllPlayEvents = [
-  djV1
-  //djV2
-];
+export const allPlayEvents: Record<string, EventDetail> = {
+  practice: djV1
+};
 
 
 /*const DJ_HistoryDetail: DJ_Detail = [
