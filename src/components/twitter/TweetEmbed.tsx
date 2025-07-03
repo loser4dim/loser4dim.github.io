@@ -40,6 +40,9 @@ export default function TwitterTweetEmbed({
     const renderTweet = () => {
       if (!mounted || !ref.current || !window.twttr?.widgets?.createTweet) return;
 
+      // 🧼 描画前に中をクリアして、Tweet増殖を防ぐにゃ
+      ref.current.innerHTML = "";
+
       window.twttr.widgets
         .createTweet(tweetId, ref.current, options)
         .then((element) => {
@@ -68,7 +71,7 @@ export default function TwitterTweetEmbed({
     return () => {
       mounted = false;
     };
-  }, [tweetId, options, onLoad, onError]);
+  }, [tweetId]); // ✅ options や onLoad など副作用の原因を依存配列から外すにゃ
 
   return (
     <>
