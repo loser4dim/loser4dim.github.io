@@ -23,7 +23,7 @@ export const event: EventDetail = {
   flyer: {
     width : 960,
     height: 720,
-    image : "/dj/2022/djv1.avif"
+    image : "/dj/2022/djV1.avif"
   },
   timeSlot: [
     {
@@ -40,7 +40,6 @@ export const event: EventDetail = {
       start: "15:00",
       end  : "16:00",
       dj   : ["DJ\"MAꓘKURO\""]
-      ,vj:["aaaaa"]
     }
   ],
   organizers: [
