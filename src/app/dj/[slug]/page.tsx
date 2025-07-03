@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import TransitionLink from "@/components/transition/TransitionLink";
-import TweetList from "@/components/TweetList";
+import TweetList from "@/components/twitter/TweetList"
 import { allPlayEvents } from "@/data/dj/AllEvents";
 
 export const dynamic = "force-static";
@@ -17,7 +17,7 @@ function timeToMinutes(time: string): number {
 
 function timeToPosition(time: string): number {
   const startMin = timeToMinutes("13:00");
-  return (timeToMinutes(time) - startMin) * 2; // 1分 = 2px
+  return (timeToMinutes(time) - startMin) * 2;
 }
 
 function timeDiffToHeight(start: string, end: string): number {

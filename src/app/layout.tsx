@@ -1,8 +1,7 @@
-//import fontsBase    from "@/app/font";
 import metadataBase from "@/app/metadata"
 import "@/app/globals.css";
 import ClientLayoutWrapper from "@/components/transition/ClientLayout"
-import TweetProvider from "@/components/TweetProvider";
+
 
 export const metadata = metadataBase;
 
@@ -16,11 +15,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         text-[var(--color-text)]
         font-base"
       >
-        <TweetProvider>
-          <ClientLayoutWrapper>
-            {children}
-          </ClientLayoutWrapper>
-        </TweetProvider>
+        <ClientLayoutWrapper>
+          {children}
+        </ClientLayoutWrapper>
       </body>
     </html>
   );

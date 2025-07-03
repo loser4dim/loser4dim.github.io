@@ -6,6 +6,8 @@ import StaffAccordion from "@/components/profile/accordion/StaffAccordion";
 import SkillIcons from "@/components/profile/SkillIcons";
 import TransitionLink from "@/components/transition/TransitionLink";
 
+export const dynamic = "force-static";
+
 export default function Profile() {
   return (
     <main className="flex flex-col items-center px-4 py-12 gap-12">
@@ -70,4 +72,3 @@ export default function Profile() {
     </main>
   );
 }
-export const dynamic = "force-static";

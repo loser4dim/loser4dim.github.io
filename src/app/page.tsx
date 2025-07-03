@@ -2,6 +2,8 @@ import Image from "next/image";
 import SnsLinks from "@/components/SnsLinks";
 import TransitionLink from "@/components/transition/TransitionLink";
 
+export const dynamic = "force-static";
+
 export default function Home() {
   return (
     <main className="flex flex-col items-center w-screen min-h-screen px-4 pb-12">
@@ -25,4 +27,3 @@ export default function Home() {
     </main>
   );
 }
-export const dynamic = "force-static";
