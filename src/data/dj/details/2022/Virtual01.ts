@@ -98,13 +98,13 @@ export const event: EventDetail = {
       index : 7,
       artist: "room",
       track : "blow",
-      url   : ""
+      url   : "https://omoidelabel.bandcamp.com/track/blow"
     },
     {
       index : 8,
       artist: "Silvanian Families",
       track : "Change My Heart",
-      url   : ""
+      url   : "http://maltinerecords.cs8.biz/65.html"
     },
     {
       index : 9,

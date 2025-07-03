@@ -1,7 +1,7 @@
 import metadataBase from "@/app/metadata"
 import "@/app/globals.css";
 import ClientLayoutWrapper from "@/components/transition/ClientLayout"
-
+import Script from "next/script";
 
 export const metadata = metadataBase;
 
@@ -15,6 +15,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         text-[var(--color-text)]
         font-base"
       >
+        <Script
+          src="https://platform.twitter.com/widgets.js"
+          strategy="afterInteractive"
+        />
         <ClientLayoutWrapper>
           {children}
         </ClientLayoutWrapper>

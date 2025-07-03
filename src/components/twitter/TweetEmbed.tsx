@@ -35,22 +35,10 @@ export default function TwitterTweetEmbed({
   useEffect(() => {
     let mounted = true;
 
-    const loadScript = async () => {
-      if (typeof window === "undefined") return;
-
-      if (!window.twttr) {
-        const script = document.createElement("script");
-        script.src = "https://platform.twitter.com/widgets.js";
-        script.async = true;
-        script.onload = renderTweet;
-        document.body.appendChild(script);
-      } else {
-        renderTweet();
-      }
-    };
-
     const renderTweet = () => {
-      if (!mounted || !ref.current || !window.twttr?.widgets?.createTweet) return;
+      if (!mounted || !ref.current || !window.twttr?.widgets?.createTweet) {
+        return;
+      }
 
       window.twttr.widgets
         .createTweet(tweetId, ref.current, options)
@@ -62,7 +50,19 @@ export default function TwitterTweetEmbed({
         .catch((err) => console.error("Tweet render error:", err));
     };
 
-    loadScript();
+    // ✅ scriptはlayout.tsxで読み込まれる前提
+    if (window.twttr?.widgets?.createTweet) {
+      renderTweet();
+    } else {
+      const checkInterval = setInterval(() => {
+        if (window.twttr?.widgets?.createTweet) {
+          clearInterval(checkInterval);
+          renderTweet();
+        }
+      }, 100);
+      // タイムアウト防止（最大5秒）
+      setTimeout(() => clearInterval(checkInterval), 5000);
+    }
 
     return () => {
       mounted = false;
