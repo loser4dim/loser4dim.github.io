@@ -31,15 +31,21 @@ export default async function Page({ params }: { params: { slug: string } }) {
     return notFound();
   }
 
-  const hourSteps = Array.from(
-    { length: (timeToMinutes(event.time.end) - timeToMinutes(event.time.start)) / 60 + 1 },
-    (_, i) => {
-      const m = timeToMinutes(event.time.start) + i * 60;
+  let hourSteps: string[] = [];
+  if (event.timeSlot) {
+    const start = event.timeSlot.start;
+    const end = event.timeSlot.end;
+    const startMin = timeToMinutes(start);
+    const endMin = timeToMinutes(end);
+    const count = (endMin - startMin) / 60 + 1;
+
+    hourSteps = Array.from({ length: count }, (_, i) => {
+      const m = startMin + i * 60;
       const h = String(Math.floor(m / 60)).padStart(2, "0");
       const mm = String(m % 60).padStart(2, "0");
       return `${h}:${mm}`;
-    }
-  );
+    });
+  }
 
   return (
     <div className="max-w-5xl mx-auto p-6 space-y-10">
@@ -158,7 +164,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
                             </span>
                             {": "}
                             {
-                              s.staffs.map(
+                              s.performers.map(
                                 (person, j) => {
                                   const content = person.url ? (
                                     <a
@@ -176,7 +182,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
                                   return (
                                     <span key={j}>
                                       {content}
-                                      {j < s.staffs.length - 1 ? ", " : ""}
+                                      {j < s.performers.length - 1 ? ", " : ""}
                                     </span>
                                   );
                                 }
@@ -248,11 +254,14 @@ export default async function Page({ params }: { params: { slug: string } }) {
               />
             </div>
           ) : (
-            event.timeSlot && (
+            event.timeSlot && (() => {
+              const { start, end, performs } = event.timeSlot;
+
+              return (
               <div
                 className="relative mt-2"
                 style={{
-                  height: timeDiffToHeight(event.time.start, event.time.end) + 40,
+                  height: timeDiffToHeight(start, end) + 40,
                 }}
               >
                 {
@@ -281,16 +290,16 @@ export default async function Page({ params }: { params: { slug: string } }) {
                   )
                 }
                 <div
-                  className="absolute top-0 left-[72px] right-[72px] px-2 sm:px-4 md:px-6"
+                  className="absolute top-0 left-[96px] right-[96px] px-2 sm:px-4 md:px-6"
                 >
                   {
-                    event.timeSlot.map(
+                    performs.map(
                       (slot, i) => (
                         <div
                           key={i}
                           className="absolute bg-neutral-600 rounded-md px-4 mx-auto"
                           style={{
-                            top: timeToPosition(slot.start, event.time.start)+5,
+                            top: timeToPosition(slot.start, start)+5,
                             height: timeDiffToHeight(slot.start, slot.end)-10,
                             left: "0",
                             right: "0",
@@ -316,8 +325,8 @@ export default async function Page({ params }: { params: { slug: string } }) {
                   }
                 </div>
               </div>
-            )
-          )
+            );
+  })())
         }
       </div>
 

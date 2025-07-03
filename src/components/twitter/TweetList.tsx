@@ -42,8 +42,8 @@ export default function TweetList({ ids }: { ids: string[] }) {
                 )}
               </div>
             }
-            onLoad={handleLoad}   // ✅ 直接渡す
-            onError={handleError} // ✅ 直接渡す
+            onLoad={handleLoad}
+            onError={handleError}
           />
         </div>
       ))}

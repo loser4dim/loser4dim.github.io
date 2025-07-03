@@ -38,7 +38,7 @@ export const event: EventDetail = {
   support : [
     {
       role  : "DJ",
-      staffs: [
+      performers: [
         {
           name: "あきぺ",
           url : "https://linktr.ee/vrdjakipe"
@@ -110,7 +110,7 @@ export const event: EventDetail = {
       index : 9,
       artist: "Carpainter",
       track : "Returning",
-      url   : "https://carpainter.bandcamp.com/track/returning"
+      url   : "https://www.trekkie-trax.com/ep/trekkie87/"
     },
     {
       index : 10,
@@ -122,7 +122,7 @@ export const event: EventDetail = {
       index : 11,
       artist: "uno feat. ちよこ",
       track : "#自宅ミュージックオールナイトロング",
-      url   : "https://iosys.bandcamp.com/track/home-music-all-night-long"
+      url   : "https://www.iosysos.com/discographyportal.php?cdno=IOTX-0006"
     },
     {
       index : 12,

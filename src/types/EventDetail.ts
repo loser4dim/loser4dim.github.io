@@ -41,8 +41,8 @@ export type EventDetail = {
   };
 
   support? : {
-    role  : string;
-    staffs: Person[];
+    role      : string;
+    performers: Person[];
   }[];
 
   announcements: {
@@ -59,11 +59,15 @@ export type EventDetail = {
   };
 
   timeSlot?      : {
-    start: string;
-    end  : string;
-    dj   : string[];
-    vj?  : string[];
-  }[];
+    start   : string;
+    end     : string;
+    performs: {
+      start: string;
+      end  : string;
+      dj   : string[];
+      vj?  : string[];
+    }[]
+  };
 
   mixArchives?: {
     type    : "soundcloud" | "mixcloud" | "youtube" | "twitch";
