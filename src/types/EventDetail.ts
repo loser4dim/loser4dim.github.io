@@ -70,7 +70,7 @@ export type EventDetail = {
   };
 
   mixArchives?: {
-    type    : "soundcloud" | "mixcloud" | "youtube" | "twitch";
+    type    : "mixcloud" | "youtube" | "twitch";
     url     : string;
     embedUrl: string;
   }[];

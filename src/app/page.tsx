@@ -1,5 +1,5 @@
 import Image from "next/image";
-import SnsLinks from "@/components/SnsLinks";
+import SnsLinks from "@/components/profile/SnsLinks";
 import TransitionLink from "@/components/transition/TransitionLink";
 
 export const dynamic = "force-static";

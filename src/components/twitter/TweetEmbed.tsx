@@ -7,8 +7,8 @@ declare global {
     twttr?: {
       widgets: {
         createTweet: (
-          tweetId: string,
-          element: HTMLElement,
+          tweetId : string,
+          element : HTMLElement,
           options?: Record<string, any>
         ) => Promise<HTMLElement>;
       };
@@ -16,77 +16,91 @@ declare global {
   }
 }
 
-interface TwitterTweetEmbedProps {
-  tweetId: string;
-  options?: Record<string, any>;
+interface TweetEmbedProps {
+  tweetId     : string;
+  options?    : Record<string, any>;
   placeholder?: React.ReactNode;
-  onLoad?: (id: string) => void;   // ← tweetId を渡すように変更
-  onError?: (id: string) => void;  // ← tweetId を渡すように変更
+  onLoad?     : (id: string) => void;
+  onError?    : (id: string) => void;
 }
 
-export default function TwitterTweetEmbed({
-  tweetId,
-  options,
-  placeholder,
-  onLoad,
-  onError,
-}: TwitterTweetEmbedProps) {
-  const ref = useRef<HTMLDivElement>(null);
-  const [loaded, setLoaded] = useState(false);
+export default function TweetEmbed({ tweetId, options, placeholder, onLoad, onError }: TweetEmbedProps) {
+  const ref      = useRef<HTMLDivElement>(null);
   const triedRef = useRef(false);
 
-  useEffect(() => {
-    let mounted = true;
+  const [loaded, setLoaded] = useState(false);
+  
+  useEffect(
+    () => {
+      let mounted = true;
 
-    const renderTweet = () => {
-      if (!mounted || !ref.current || triedRef.current) return;
-      if (!window.twttr?.widgets?.createTweet) return;
+      const renderTweet = () => {
+        if (!mounted || !ref.current || triedRef.current || !window.twttr?.widgets?.createTweet) {
+          return;
+        }
 
-      triedRef.current = true;
-      ref.current.innerHTML = "";
+        triedRef.current      = true;
+        ref.current.innerHTML = "";
 
-      window.twttr.widgets
-        .createTweet(tweetId, ref.current, options)
-        .then(() => {
-          if (!mounted) return;
-          setLoaded(true);
-          onLoad?.(tweetId); // ✅ tweetId を渡す
-        })
-        .catch((err) => {
-          console.error("Tweet render error:", err);
-          onError?.(tweetId); // ✅ tweetId を渡す
-        });
-    };
+        window.twttr.widgets
+          .createTweet(tweetId, ref.current, options)
+          .then(
+            () => {
+              if (!mounted) {
+                return;
+              }
+              setLoaded(true);
+              onLoad?.(tweetId);
+            }
+          )
+          .catch(
+            (err) => {
+              console.error("Tweet Render Error:", err);
+              onError?.(tweetId);
+            }
+          )
+        ;
+      };
 
-    const checkReady = setInterval(() => {
-      if (window.twttr?.widgets?.createTweet) {
-        clearInterval(checkReady);
-        renderTweet();
-      }
-    }, 100);
+      const pollingTimeMilliSec = 100;
+      const timeoutTimeMilliSec = 5000;
 
-    const timeout = setTimeout(() => {
-      clearInterval(checkReady);
-      if (!triedRef.current) {
-        console.warn("widgets.js timeout or blocked");
-        onError?.(tweetId); // ✅ timeout時もtweetId渡す
-      }
-    }, 5000);
+      const checkReady = setInterval(
+        () => {
+          if (window.twttr?.widgets?.createTweet) {
+            clearInterval(checkReady);
+            renderTweet();
+          }
+        },
+        pollingTimeMilliSec
+      );
 
-    return () => {
-      mounted = false;
-      clearInterval(checkReady);
-      clearTimeout(timeout);
-    };
-  }, [tweetId, onLoad, onError, options]);
+      const timeout = setTimeout(
+        () => {
+          clearInterval(checkReady);
+          if (!triedRef.current) {
+            console.warn("widgets.js Timeout or Blocked");
+            onError?.(tweetId);
+          }
+        },
+        timeoutTimeMilliSec
+      );
+
+      return (
+        () => {
+          mounted = false;
+          clearInterval(checkReady);
+          clearTimeout(timeout);
+        }
+      );
+    },
+    [tweetId, onLoad, onError, options]
+  );
 
   return (
     <>
       {!loaded && placeholder}
-      <div
-        ref={ref}
-        className="flex justify-center min-h-[400px] mx-auto w-full max-w-[350px] px-2"
-      />
+      <div ref={ref}/>
     </>
   );
 }

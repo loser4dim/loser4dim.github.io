@@ -23,7 +23,7 @@ export default function Profile() {
         />
       </TransitionLink>
 
-      <section className="max-w-2xl">
+      <section className="max-w-3xl">
         <h1 className="text-2xl text-center font-bold mb-4">
           loser4dim
         </h1>
@@ -40,28 +40,28 @@ export default function Profile() {
         </div>
       </section>
 
-      <div className="w-3/4 max-w-2xl">
+      <div className="w-3/4 max-w-xl">
         <h2 className="text-xl font-semibold text-center">
           出演
         </h2>
         <DjAccordion />
       </div>
 
-      <div className="w-3/4 max-w-2xl">
+      <div className="w-3/4 max-w-xl">
         <h2 className="text-xl font-semibold text-center">
           主催
         </h2>
         <OrganizationAccordion />
       </div>
 
-      <div className="w-3/4 max-w-2xl">
+      <div className="w-3/4 max-w-xl">
         <h2 className="text-xl font-semibold text-center">
           作曲
         </h2>
         <CompositionAccordion />
       </div>
 
-      <div className="w-3/4 max-w-2xl">
+      <div className="w-3/4 max-w-xl">
         <h2 className="text-xl font-semibold text-center">
           技術協力
         </h2>
