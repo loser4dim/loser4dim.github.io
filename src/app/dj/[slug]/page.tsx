@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { notFound } from "next/navigation";
+import WavePlayer from "@/components/dj/WavePlayer";
 import TransitionLink from "@/components/transition/TransitionLink";
 import TweetList from "@/components/twitter/TweetList"
 import { allPlayEvents } from "@/data/dj/AllEvents";
@@ -336,15 +337,41 @@ export default async function Page({ params }: { params: { slug: string } }) {
             <h2 className="text-center text-xl mb-2">
               Mix
             </h2>
-            {/*<ul className="space-y-2">
-              {event.mixArchives.map((mix, i) => (
-                <li key={i}>
-                  <a href={mix.url} className="text-highlight underline" target="_blank" rel="noopener noreferrer">
-                    {mix.type.toUpperCase()}で聴く
-                  </a>
-                </li>
-              ))}
-            </ul>*/}
+            <div className="space-y-6">
+              {
+                event.mixArchives.map(
+                  (mix, i) => {
+                    if (mix.type === "mixcloud") {
+                      return (
+                        <div key={i} className="rounded-lg overflow-hidden shadow-lg border border-neutral-700">
+                          <iframe
+                            src={mix.embedUrl}
+                            width="100%"
+                            height="120"
+                            allow="encrypted-media; fullscreen; autoplay; idle-detection; speaker-selection; web-share;"
+                            className="w-full"
+                            title={`Mixcloud player ${i}`}
+                          />
+                        </div>
+                      );
+                    }
+
+                    if (mix.type === "cloudflare") {
+                      return (
+                        <div
+                          key={i}
+                          className="rounded-lg p-4 shadow-lg border border-neutral-700 bg-neutral-900 space-y-2"
+                        >
+                          <WavePlayer src={mix.embedUrl} />
+                        </div>
+                      );
+                    }
+
+                    return null;
+                  }
+                ) 
+              }
+            </div>
           </div>
         )
       }

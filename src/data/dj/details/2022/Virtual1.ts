@@ -13,7 +13,7 @@ export const event: EventDetail = {
     end  : "23:40"
   },
   place: {
-    name    : "YClubUnknown 3rd",
+    name    : "ClubUnknown 3rd",
     platform: {
       name    : "VRChat",
       instance: "Friends+"
@@ -102,6 +102,16 @@ export const event: EventDetail = {
       }
     ]
   },
+  mixArchives: [
+    {
+      type    : "mixcloud",
+      embedUrl: "https://player-widget.mixcloud.com/widget/iframe/?light=1&feed=%2Floser4dim%2F2022_3_3dj%25E3%2581%25AA%25E3%2582%2593%25E3%2582%2582%25E3%2582%258F%25E3%2581%258B%25E3%2582%2589%25E3%2582%2593ep7%2F"
+    },
+    {
+      type    : "cloudflare",
+      embedUrl: "https://pub-e92c9f52ee8b4ad98efb0d3b0619305c.r2.dev/2025/2025-6-28-DeepBlue.opus"
+    },
+  ],
   setlist: [
     {
       index : 1,
@@ -262,7 +272,6 @@ export const event: EventDetail = {
     "1499389603945467913",
     "1499388406048051201",
     "1499409304642011138",
-    "1499444836910321664",
-    "1499438133309763585"
+    "1499444836910321664"
   ]
 };

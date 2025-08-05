@@ -1184,12 +1184,12 @@ export const DjIndex: EventYearGroup[] = [
           },
           {
             day  : "21",
-            title: "k",
+            title: "KABU誕生日",
             slug : ""
           },
           {
             day  : "28",
-            title: "BPM",
+            title: "BPM130",
             slug : ""
           }
         ]
@@ -1204,7 +1204,7 @@ export const DjIndex: EventYearGroup[] = [
           },
           {
             day  : "7",
-            title: "house",
+            title: "House会",
             slug : ""
           },
           {
@@ -1244,7 +1244,7 @@ export const DjIndex: EventYearGroup[] = [
           },
           {
             day  : "21",
-            title: "MONDAY",
+            title: "MONDAY RELIEF",
             slug : ""
           }
         ]
@@ -1319,12 +1319,12 @@ export const DjIndex: EventYearGroup[] = [
         events: [
           {
             day  : "5",
-            title: "TBA",
+            title: "CLUB SILHOUETTE",
             slug : ""
           },
           {
             day  : "8",
-            title: "TBA",
+            title: "SUSHI HOUSE",
             slug : ""
           },
           {
@@ -1334,11 +1334,46 @@ export const DjIndex: EventYearGroup[] = [
           },
           {
             day  : "24",
-            title: "TBA",
+            title: "QroQujaQue",
             slug : ""
           },
           {
             day  : "27",
+            title: "Interxia",
+            slug : ""
+          }
+        ]
+      },
+      {
+        month : "8",
+        events: [
+          {
+            day  : "3",
+            title: "THE Outside",
+            slug : ""
+          },
+          {
+            day  : "3",
+            title: "BUG COLLECTIVE",
+            slug : ""
+          },
+          {
+            day  : "7",
+            title: "méllon's aftrelives",
+            slug : ""
+          },
+          {
+            day  : "9",
+            title: "THE LUV BUGS in VRChat vol.2",
+            slug : ""
+          },
+          {
+            day  : "16",
+            title: "TBA",
+            slug : ""
+          },
+          {
+            day  : "24",
             title: "TBA",
             slug : ""
           }
@@ -1351,6 +1386,11 @@ export const DjIndex: EventYearGroup[] = [
             day  : "13",
             title: "TBA",
             slug : ""
+          },
+          {
+            day  : "17",
+            title: "TBA",
+            slug : ""
           }
         ]
       },
@@ -1359,6 +1399,16 @@ export const DjIndex: EventYearGroup[] = [
         events: [
           {
             day  : "25",
+            title: "TBA",
+            slug : ""
+          }
+        ]
+      },
+      {
+        month : "11",
+        events: [
+          {
+            day  : "8",
             title: "TBA",
             slug : ""
           }
