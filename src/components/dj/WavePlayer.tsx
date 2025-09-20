@@ -8,9 +8,8 @@ interface WavePlayerProps {
 }
 
 export default function WavePlayer({ src }: WavePlayerProps) {
-  const containerRef = useRef<HTMLDivElement>(null); // ✅ これが必要にゃ！
-
-  const waveRef = useRef<WaveSurfer | null>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const waveRef      = useRef<WaveSurfer | null>(null);
 
   useEffect(() => {
     if (!containerRef.current) return;
@@ -27,7 +26,7 @@ export default function WavePlayer({ src }: WavePlayerProps) {
       backend: "MediaElement",
       mediaControls: false,
       normalize: true,
-    } as any); // ← ★これで型チェックバイパスにゃ！
+    } as any);
 
     ws.load(src);
     waveRef.current = ws;
@@ -47,10 +46,10 @@ export default function WavePlayer({ src }: WavePlayerProps) {
   }, [src]);
 
   return (
-    <div className="relative h-[100px] overflow-hidden rounded-xl border border-neutral-700 shadow-lg bg-neutral-900">
+    <div className="relative h-[100px] overflow-hidden rounded-xl border border-neutral-600 bg-neutral-800">
   <div
     ref={containerRef}
-    className="absolute bottom-0 left-0 right-0 bg-neutral-800"
+    className="absolute bottom-0 left-0 right-0 bg-neutral-700"
     style={{ height: "100px" }}
   />
 </div>
