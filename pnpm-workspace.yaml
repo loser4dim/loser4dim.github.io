@@ -1,4 +1,6 @@
 onlyBuiltDependencies:
   - '@tailwindcss/oxide'
+  - nodegit-papandreou
   - sharp
+  - slint
   - unrs-resolver

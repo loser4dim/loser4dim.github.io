@@ -133,7 +133,7 @@ export default function SkillIcons() {
     {
       icon: faTableCells,
       name: "spreadsheet",
-      url : "https://docs.google.com/spreadsheets/d/1EtmpXMQ10AV_YdliGjXR28xeNPCQy6O9czi1Nm0KqSs/edit?usp=sharing"
+      url : "https://docs.google.com/spreadsheets/d/14wxqxXo4kN2PtHyhqtHex0JdNFM6iWLvkUlVyT_NGuc/edit?usp=sharing"
     },
     {
       icon: faUnity,

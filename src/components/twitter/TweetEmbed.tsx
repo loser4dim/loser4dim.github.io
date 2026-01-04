@@ -9,7 +9,7 @@ declare global {
         createTweet: (
           tweetId : string,
           element : HTMLElement,
-          options?: Record<string, any>
+          options?: Record<string, unknown>
         ) => Promise<HTMLElement>;
       };
     };
@@ -18,7 +18,7 @@ declare global {
 
 interface TweetEmbedProps {
   tweetId     : string;
-  options?    : Record<string, any>;
+  options?    : Record<string, unknown>;
   placeholder?: React.ReactNode;
   onLoad?     : (id: string) => void;
   onError?    : (id: string) => void;

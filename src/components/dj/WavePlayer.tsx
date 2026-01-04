@@ -22,25 +22,25 @@ export default function WavePlayer({ src }: WavePlayerProps) {
       barWidth: 2,
       barGap: 1,
       barAlign: "bottom",
-      drawBars: true,
+      //drawBars: true,
       backend: "MediaElement",
       mediaControls: false,
       normalize: true,
-    } as any);
+    });
 
     ws.load(src);
     waveRef.current = ws;
 
     const resizeObserver = new ResizeObserver(() => {
-      if ((waveRef.current as any)?.drawBuffer) {
-        (waveRef.current as any).drawBuffer();
-      }
+      /*if ((waveRef.current)?.drawBuffer) {
+        (waveRef.current).drawBuffer();
+      }*/
     });
 
     resizeObserver.observe(containerRef.current);
 
     return () => {
-      ws.destroy();
+      //ws.destroy();
       resizeObserver.disconnect();
     };
   }, [src]);

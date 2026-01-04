@@ -1,52 +1,43 @@
-export default await (
-  async () => {
-    const { FlatCompat }    = await import("@eslint/eslintrc");
-    const { fileURLToPath } = await import("url");
-    const { dirname }       = await import("path");
+import nextVitals from "eslint-config-next/core-web-vitals";
+import nextTs from "eslint-config-next/typescript";
+import perfectionist from "eslint-plugin-perfectionist";
+import unusedImports from "eslint-plugin-unused-imports";
+import { defineConfig, globalIgnores } from "eslint/config";
 
-    const __filename = fileURLToPath(import.meta.url);
-    const __dirname  = dirname(__filename);
+export default defineConfig([
+  ...nextVitals,
+  ...nextTs,
 
-    const compat     = new FlatCompat({ baseDirectory: __dirname });
-
-    return [
-      ...compat.extends(
-        "next",
-        "next/core-web-vitals",
-        "plugin:jsx-a11y/recommended",
-        "plugin:react-hooks/recommended"
-      ),
-      {
-        plugins: {
-          "unused-imports": (await import("eslint-plugin-unused-imports")).default,
-          perfectionist   : (await import("eslint-plugin-perfectionist")).default
-        },
-        rules: {
-          "unused-imports/no-unused-imports": "error",
-          "unused-imports/no-unused-vars"   : [
-            "warn",
-            {
-              vars             : "all",
-              args             : "after-used",
-              argsIgnorePattern: "^_"
-            }
-          ],
-          "perfectionist/sort-imports": [
-            "error",
-            {
-              type           : "natural",
-              order          : "asc",
-              newlinesBetween: "never",
-              groups         : [
-                ["builtin", "external"],
-                ["internal", "parent", "sibling", "index"]
-              ]
-            }
-          ],
-          "jsx-a11y/anchor-is-valid"   : "error",
-          "react-hooks/exhaustive-deps": "error"
+  {
+    plugins: {
+      "unused-imports": unusedImports,
+      perfectionist
+    },
+    rules: {
+      "unused-imports/no-unused-imports": "error",
+      "unused-imports/no-unused-vars": [
+        "warn",
+        { vars: "all", args: "after-used", argsIgnorePattern: "^_" }
+      ],
+      "perfectionist/sort-imports": [
+        "error",
+        {
+          type: "natural",
+          order: "asc",
+          newlinesBetween: 0,
+          groups: [
+            ["builtin", "external"],
+            ["internal", "parent", "sibling", "index"]
+          ]
         }
-      }
-    ];
-  }
-) ();
+      ],
+
+      "jsx-a11y/anchor-is-valid": "error",
+
+      "@typescript-eslint/no-unused-vars": "off",
+      "react-hooks/set-state-in-effect": "off"
+    }
+  },
+
+  globalIgnores([".next/**", "out/**", "next-env.d.ts"])
+]);

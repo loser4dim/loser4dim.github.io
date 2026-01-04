@@ -6,16 +6,16 @@
       "dom.iterable",
       "esnext"
     ],
-    "strict": true,
-    "noEmit": true,
-    "module": "esnext",
-    "moduleResolution": "bundler",
+    "strict"           : true,
+    "noEmit"           : true,
+    "module"           : "esnext",
+    "moduleResolution" : "bundler",
     "resolveJsonModule": true,
-    "isolatedModules": true,
-    "jsx": "preserve",
-    "esModuleInterop": true,
-    "incremental": true,
-    "plugins": [
+    "isolatedModules"  : true,
+    "jsx"              : "react-jsx",
+    "esModuleInterop"  : true,
+    "incremental"      : true,
+    "plugins"          : [
       {
         "name": "next"
       }
@@ -25,13 +25,14 @@
         "./src/*"
       ]
     },
-    "allowJs": true,
+    "allowJs"     : true,
     "skipLibCheck": true
   },
   "include": [
     "**/*.ts",
     "**/*.tsx",
-    ".next/types/**/*.ts"
+    ".next/types/**/*.ts",
+    ".next/dev/types/**/*.ts"
   ],
   "exclude": [
     "node_modules",
