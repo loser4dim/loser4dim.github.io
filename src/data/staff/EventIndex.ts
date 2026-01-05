@@ -8,9 +8,9 @@ export const StaffIndex: EventYearGroup[] = [
         month : "11",
         events: [
           {
-            day  : "14",
+            day  : "13",
             title: "MusicStellarLake × RUINS",
-            slug : ""
+            slug : "pj-1"
           }
         ]
       },
@@ -19,8 +19,8 @@ export const StaffIndex: EventYearGroup[] = [
         events: [
           {
             day  : "18",
-            title: "ごっつええFuture in VRChat Ver12.0 × MusicStellarLake",
-            slug : ""
+            title: "ごっつええFuture in VRChat Ver12.0× Music Stellar Lake",
+            slug : "pj-2"
           }
         ]
       }
@@ -35,7 +35,7 @@ export const StaffIndex: EventYearGroup[] = [
           {
             day  : "26",
             title: "Astra",
-            slug : ""
+            slug : "pj-3"
           }
         ]
       },
@@ -45,7 +45,7 @@ export const StaffIndex: EventYearGroup[] = [
           {
             day  : "23",
             title: "CUERainder Vol.26 わくわくVRChat",
-            slug : ""
+            slug : "pj-4"
           }
         ]
       },
@@ -55,7 +55,7 @@ export const StaffIndex: EventYearGroup[] = [
           {
             day  : "15",
             title: "Piano Therapy Op.2",
-            slug : ""
+            slug : "staff-1"
           }
         ]
       },
@@ -65,7 +65,7 @@ export const StaffIndex: EventYearGroup[] = [
           {
             day  : "13",
             title: "MusicStellarLake × RUINS",
-            slug : ""
+            slug : "pj-5"
           }
         ]
       },
@@ -75,12 +75,12 @@ export const StaffIndex: EventYearGroup[] = [
           {
             day  : "12",
             title: "Stellar Garage",
-            slug : ""
+            slug : "staff-2"
           },
           {
             day  : "26",
-            title: "INVOKE YOUR FUTURE",
-            slug : ""
+            title: "Invoke Your Future",
+            slug : "staff-3"
           }
         ]
       },
@@ -90,22 +90,12 @@ export const StaffIndex: EventYearGroup[] = [
           {
             day  : "6",
             title: "CUERaider Vol.40 \"私立CUERAIDER学園\"",
-            slug : ""
+            slug : "presentation-1"
           },
           {
             day  : "29",
             title: "バグコレ",
-            slug : ""
-          }
-        ]
-      },
-      {
-        month : "12",
-        events: [
-          {
-            day  : "23",
-            title: "空の鯨",
-            slug : ""
+            slug : "pj-6"
           }
         ]
       }
@@ -120,7 +110,7 @@ export const StaffIndex: EventYearGroup[] = [
           {
             day  : "27",
             title: "バグコレ sepported 音楽的同位体",
-            slug : ""
+            slug : "pj-7"
           }
         ]
       },
@@ -130,7 +120,7 @@ export const StaffIndex: EventYearGroup[] = [
           {
             day  : "15",
             title: "𝐀𝐒𝐓𝐑𝐀 𝟑",
-            slug : ""
+            slug : "pj-8"
           }
         ]
       },
@@ -140,12 +130,12 @@ export const StaffIndex: EventYearGroup[] = [
           {
             day  : "16",
             title: "VRC_Nova × ごっつええFuture",
-            slug : ""
+            slug : "pj-9"
           },
           {
             day  : "29",
             title: "BUG COLLECTIVE BONEN-KAI",
-            slug : ""
+            slug : "staff-4"
           }
         ]
       }
@@ -160,12 +150,12 @@ export const StaffIndex: EventYearGroup[] = [
           {
             day  : "9",
             title: "ALT3",
-            slug : ""
+            slug : "staff-5-1"
           },
           {
             day  : "10",
             title: "ALT3",
-            slug : ""
+            slug : "staff-5-2"
           }
         ]
       },
@@ -175,7 +165,7 @@ export const StaffIndex: EventYearGroup[] = [
           {
             day  : "28",
             title: "𝐀𝐒𝐓𝐑𝐀 𝟒",
-            slug : ""
+            slug : "pj-10"
           }
         ]
       },
@@ -185,7 +175,7 @@ export const StaffIndex: EventYearGroup[] = [
           {
             day  : "22",
             title: "CUERaider Vol.123 \"CUERAIDER、VRC初上陸 ～実際にやってみた～\"",
-            slug : ""
+            slug : "presentation-2"
           }
         ]
       },
@@ -195,7 +185,7 @@ export const StaffIndex: EventYearGroup[] = [
           {
             day  : "26",
             title: "Invitation.",
-            slug : ""
+            slug : "pj-11"
           }
         ]
       }
@@ -210,7 +200,17 @@ export const StaffIndex: EventYearGroup[] = [
           {
             day  : "11",
             title: "𝐀𝐒𝐓𝐑𝐀 𝟓",
-            slug : ""
+            slug : "pj-12"
+          }
+        ]
+      },
+      {
+        month : "2",
+        events: [
+          {
+            day  : "27",
+            title: "星屑の記憶たち -Stardust Memories- FINALE",
+            slug : "selector-1"
           }
         ]
       },
@@ -220,7 +220,17 @@ export const StaffIndex: EventYearGroup[] = [
           {
             day  : "28",
             title: "𝗔𝗦𝗧𝗥𝗔 𝟲",
-            slug : ""
+            slug : "pj-13"
+          }
+        ]
+      },
+      {
+        month : "11",
+        events: [
+          {
+            day  : "28",
+            title: "𝐀𝐒𝐓𝐑𝐀 𝟕",
+            slug : "pj-14"
           }
         ]
       }
