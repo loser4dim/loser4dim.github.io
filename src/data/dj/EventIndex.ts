@@ -1464,8 +1464,8 @@ export const DjIndex: EventYearGroup[] = [
           },
           {
             day  : "6",
-            title: "津田沼",
-            slug : "" // real-19
+            title: "MAGNUM TORNADO LAP3",
+            slug : "magnum-tornado-1"
           },
           {
             day  : "18",
@@ -1483,9 +1483,9 @@ export const DjIndex: EventYearGroup[] = [
         month : "1",
         events: [
           {
-            day  : "4",
-            title: "阿佐ヶ谷",
-            slug : "" // real-20
+            day  : "3",
+            title: "TECHNOVERSE vol.2 -テクノ大神宮⛩️-",
+            slug : "technoverse-1"
           },
           {
             day  : "9",
@@ -1494,18 +1494,18 @@ export const DjIndex: EventYearGroup[] = [
           },
           {
             day  : "12",
-            title: "Tsubaki",
-            slug : "" // virtual-219
+            title: "Initium vol.9",
+            slug : "initium-1"
           },
            {
             day  : "18",
-            title: "cCLUB SILHOUETTE",
+            title: "CLUB SILHOUETTE",
             slug : "club-silhouette-23"
           },
           {
             day  : "25",
-            title: "4th",
-            slug : "" // virtual-221
+            title: "𝗧𝗵𝗲 𝟰𝘁𝗵 𝗔𝗻𝗻𝗶𝘃𝗲𝗿𝘀𝗮𝗿𝘆",
+            slug : "the-4th-anniversary"
           },
           {
             day  : "31",

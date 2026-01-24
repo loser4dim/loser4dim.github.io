@@ -101,6 +101,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
               width={event.flyer.width}
               height={event.flyer.height}
               className="rounded object-contain w-full h-auto"
+              style={{ maxHeight: "85vh" }}
             />
           )
         }

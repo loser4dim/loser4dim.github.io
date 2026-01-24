@@ -1,7 +1,10 @@
 import { event as djV00 } from "@/data/dj/details/2022/Virtual00";
 import { event as djV01 } from "@/data/dj/details/2022/Virtual01";
 import { event as djV1 } from "@/data/dj/details/2022/Virtual1";
+import { event as djV221 } from "@/data/dj/details/2026/Virtual221";
 import { event as djV222 } from "@/data/dj/details/2026/Virtual222";
+import { event as djR19 } from "@/data/dj/details/2025/Real19";
+import { event as djR20 } from "@/data/dj/details/2026/Real20";
 import { EventDetail } from "@/types/EventDetail";
 
 //import { event as djV2 } from "@/data/dj/details/2022/DJVitrual2";
@@ -10,6 +13,9 @@ export const allPlayEvents: Record<string, EventDetail> = {
   "practice": djV00,
   "akipe-tokage-birthday-1": djV01,
   "dj-unknown-1": djV1,
+  "magnum-tornado-1": djR19,
+  "technoverse-1": djR20,
+  "initium-1": djV221,
   "club-silhouette-23": djV222
 };
 

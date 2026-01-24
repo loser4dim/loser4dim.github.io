@@ -107,7 +107,8 @@ export const event: EventDetail = {
     {
       index : 7,
       artist: "HI-RISE",
-      track : "I Believe In Miracles (The Time Stretch Kings In-Form Mix)"
+      track : "I Believe In Miracles (The Time Stretch Kings In-Form Mix)",
+      url   : "https://www.discogs.com/release/123393-Hi-Rise-I-Believe-In-Miracles"
     },
     {
       index : 8,
@@ -145,7 +146,6 @@ export const event: EventDetail = {
     "2013156651277140186",
     "2013156654007963911",
     "2013156656943600005",
-    "2013533050534056146",
     "2013574582469566497",
     "2013574954067837054",
     "2013829562417725705",
