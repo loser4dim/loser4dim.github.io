@@ -1,6 +1,7 @@
 import { event as djV00 } from "@/data/dj/details/2022/Virtual00";
 import { event as djV01 } from "@/data/dj/details/2022/Virtual01";
 import { event as djV1 } from "@/data/dj/details/2022/Virtual1";
+import { event as djV220 } from "@/data/dj/details/2026/Virtual220";
 import { event as djV221 } from "@/data/dj/details/2026/Virtual221";
 import { event as djV222 } from "@/data/dj/details/2026/Virtual222";
 import { event as djR19 } from "@/data/dj/details/2025/Real19";
@@ -15,6 +16,7 @@ export const allPlayEvents: Record<string, EventDetail> = {
   "dj-unknown-1": djV1,
   "magnum-tornado-1": djR19,
   "technoverse-1": djR20,
+  "m4tt-and-friends-1": djV220,
   "initium-1": djV221,
   "club-silhouette-23": djV222
 };

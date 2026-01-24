@@ -1489,8 +1489,8 @@ export const DjIndex: EventYearGroup[] = [
           },
           {
             day  : "9",
-            title: "m4tt",
-            slug : "" // virtual-218
+            title: "M4tt & Friends 9",
+            slug : "m4tt-and-friends-1"
           },
           {
             day  : "12",
@@ -1505,12 +1505,12 @@ export const DjIndex: EventYearGroup[] = [
           {
             day  : "25",
             title: "𝗧𝗵𝗲 𝟰𝘁𝗵 𝗔𝗻𝗻𝗶𝘃𝗲𝗿𝘀𝗮𝗿𝘆",
-            slug : "the-4th-anniversary"
+            slug : ""
           },
           {
             day  : "31",
-            title: "なんわか",
-            slug : "" // real-21
+            title: "DJなんもわからん 4thAnniversary From:現実世界",
+            slug : ""
           }
         ]
       },
