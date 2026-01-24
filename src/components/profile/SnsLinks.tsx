@@ -29,22 +29,22 @@ function ImageDev({ src, alt }: { src: string; alt: string }) {
 const snsLinks = [
   {
     name: "Mixcloud",
-    href: "https://www.mixcloud.com/loser4dim/",
+    href: "https://www.mixcloud.com/loser4dim",
     icon: (<IconDiv icon={faMixcloud} />)
   },
   {
     name: "SoundCloud",
-    href: "https://soundcloud.com/loser4dim/tracks/",
+    href: "https://soundcloud.com/loser4dim/tracks",
     icon: (<IconDiv icon={faSoundcloud} />)
   },
   {
     name: "Bandcamp",
-    href: "https://loser4dim.bandcamp.com/",
+    href: "https://loser4dim.bandcamp.com",
     icon: (<IconDiv icon={faBandcamp} />)
   },
   {
     name: "Bandcamp-Fan",
-    href: "https://bandcamp.com/loser4dim/",
+    href: "https://bandcamp.com/loser4dim",
     icon: (<IconDiv icon={faBandcamp} />)
   },
   {
@@ -54,37 +54,37 @@ const snsLinks = [
   },
   {
     name: "Misskey.io",
-    href: "https://misskey.io/@loser4dim/",
+    href: "https://misskey.io/@loser4dim",
     icon: (<ImageDev src="/icons/Misskey.avif" alt="Misskey.io" />)
   },
   {
     name: "mixi2",
-    href: "https://mixi.social/@loser4dim/",
+    href: "https://mixi.social/@loser4dim",
     icon: (<ImageDev src="/icons/mixi2.avif" alt="mixi2" />)
   },
   {
     name: "ToneDen",
-    href: "https://www.toneden.io/loser4dim/",
+    href: "https://www.toneden.io/loser4dim",
     icon: (<ImageDev src="/icons/ToneDen.avif" alt="ToneDen" />)
   },
   {
     name: "Bluesky",
-    href: "https://bsky.app/profile/loser4dim.bsky.social/",
+    href: "https://bsky.app/profile/loser4dim.jp",
     icon: (<IconDiv icon={faBluesky} />)
   },
   {
     name: "Instagram",
-    href: "https://www.instagram.com/loser4dim/",
+    href: "https://www.instagram.com/loser4dim",
     icon: (<IconDiv icon={faInstagram} />)
   },
   {
     name: "Twitch",
-    href: "https://www.twitch.tv/loser4dim/",
+    href: "https://www.twitch.tv/loser4dim",
     icon: (<IconDiv icon={faTwitch} />)
   },
   {
     name: "X/Twitter",
-    href: "https://x.com/loser4dim/",
+    href: "https://x.com/loser4dim",
     icon: (<IconDiv icon={faXTwitter} />)
   }
 ];
