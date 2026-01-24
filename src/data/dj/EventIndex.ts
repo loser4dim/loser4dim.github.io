@@ -1499,8 +1499,8 @@ export const DjIndex: EventYearGroup[] = [
           },
            {
             day  : "18",
-            title: "club silhouette",
-            slug : "" // virtual-220
+            title: "cCLUB SILHOUETTE",
+            slug : "club-silhouette-23"
           },
           {
             day  : "25",
