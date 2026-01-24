@@ -1333,9 +1333,14 @@ export const DjIndex: EventYearGroup[] = [
             slug : "" // real-13
           },
           {
+            day  : "20",
+            title: "CLUB SILHOUETTE",
+            slug : "" // virtual-201
+          },
+          {
             day  : "24",
             title: "QroQujaQue",
-            slug : "" // virtual-201
+            slug : "" // virtual-202
           },
           {
             day  : "27",
@@ -1350,32 +1355,32 @@ export const DjIndex: EventYearGroup[] = [
           {
             day  : "3",
             title: "THE Outside",
-            slug : "" // virtual-202
+            slug : "" // virtual-203
           },
           {
             day  : "3",
             title: "BUG COLLECTIVE",
-            slug : "" // virtual-203
+            slug : "" // virtual-204
           },
           {
             day  : "7",
             title: "méllon's aftrelives",
-            slug : "" // virtual-204
+            slug : "" // virtual-205
           },
           {
             day  : "9",
             title: "THE LUV BUGS in VRChat vol.2",
-            slug : "" // virtual-205
+            slug : "" // virtual-206
           },
           {
             day  : "16",
             title: "ごっつええFuture",
-            slug : "" // virtual-206
+            slug : "" // virtual-207
           },
           {
             day  : "24",
             title: "WireBoX",
-            slug : "" // virtual-207
+            slug : "" // virtual-208
           }
         ]
       },
@@ -1390,12 +1395,12 @@ export const DjIndex: EventYearGroup[] = [
           {
             day  : "17",
             title: "VRC電音研",
-            slug : "" // virtual-208
+            slug : "" // virtual-209
           },
           {
             day  : "18",
             title: "méllon's afterlives #258",
-            slug : "mellons-afterlives-26" // virtual-209
+            slug : "mellons-afterlives-26" // virtual-210
           },
           {
             day  : "26",
@@ -1408,9 +1413,19 @@ export const DjIndex: EventYearGroup[] = [
         month : "10",
         events: [
           {
+            day  : "23",
+            title: "ジャケ買い",
+            slug : "" // virtual-211
+          },
+          {
             day  : "25",
             title: "n/a",
             slug : "" // real-17
+          },
+          {
+            day  : "28",
+            title: "city night drive night",
+            slug : "" // virtual-212
           }
         ]
       },
@@ -1418,9 +1433,114 @@ export const DjIndex: EventYearGroup[] = [
         month : "11",
         events: [
           {
+            day  : "6",
+            title: "méllon's afterlives",
+            slug : "" // virtual-213
+          },
+          {
             day  : "8",
             title: "THE LUV BUGS vol.3",
             slug : "" // real-18
+          },
+          {
+            day  : "12",
+            title: "VRC電音研",
+            slug : "" // virtual-214
+          },
+          {
+            day  : "26",
+            title: "民族",
+            slug : "" // virtual-215
+          }
+        ]
+      },
+      {
+        month : "12",
+        events: [
+          {
+            day  : "4",
+            title: "QroQujaQue",
+            slug : "" // virtual-216
+          },
+          {
+            day  : "6",
+            title: "津田沼",
+            slug : "" // real-19
+          },
+          {
+            day  : "18",
+            title: "méllon's afterlives",
+            slug : "" // virtual-217
+          }
+        ]
+      }
+    ]
+  },
+   {
+    year  : "2026",
+    months: [
+      {
+        month : "1",
+        events: [
+          {
+            day  : "4",
+            title: "阿佐ヶ谷",
+            slug : "" // real-20
+          },
+          {
+            day  : "9",
+            title: "m4tt",
+            slug : "" // virtual-218
+          },
+          {
+            day  : "12",
+            title: "Tsubaki",
+            slug : "" // virtual-219
+          },
+           {
+            day  : "18",
+            title: "club silhouette",
+            slug : "" // virtual-220
+          },
+          {
+            day  : "25",
+            title: "4th",
+            slug : "" // virtual-221
+          },
+          {
+            day  : "31",
+            title: "なんわか",
+            slug : "" // real-21
+          }
+        ]
+      },
+      {
+        month : "2",
+        events: [
+          {
+            day  : "7",
+            title: "???",
+            slug : ""
+          },
+          {
+            day  : "16",
+            title: "???",
+            slug : ""
+          },
+          {
+            day  : "19",
+            title: "???",
+            slug : ""
+          },
+          {
+            day  : "21",
+            title: "???",
+            slug : ""
+          },
+          {
+            day  : "28",
+            title: "???",
+            slug : ""
           }
         ]
       }
