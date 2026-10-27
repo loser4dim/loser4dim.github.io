@@ -2,9 +2,9 @@
   "name": "loser4dim-webpage",
   "type": "module",
   "version": "0.3.9",
-  "packageManager": "pnpm@11.22.0",
+  "packageManager": "pnpm@12.15.0",
   "engines": {
-    "node": ">=22.12.0"
+    "node": ">=26.12.1 <27"
   },
   "scripts": {
     "dev": "astro dev",
@@ -13,9 +13,9 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@iconify-json/simple-icons": "^1.2.98",
+    "@iconify-json/simple-icons": "^1.2.101",
     "@tailwindcss/vite": "^4.3.3",
-    "astro": "^7.3.5",
+    "astro": "^7.4.2",
     "astro-icon": "^1.2.0",
     "sharp": "^0.35.5",
     "tailwindcss": "^4.3.3"

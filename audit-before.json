@@ -1,0 +1,273 @@
+{
+  "advisories": {
+    "1241209": {
+      "findings": [
+        {
+          "version": "1.2.1",
+          "paths": [
+            ".>@tailwindcss/vite>vite>postcss>source-map-js",
+            ".>astro>vite>postcss>source-map-js",
+            ".>astro>vitefu>vite>postcss>source-map-js"
+          ],
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "id": 1241209,
+      "title": "source-map-js allows event-loop denial of service through indexed source-map section offsets",
+      "module_name": "source-map-js",
+      "vulnerable_versions": ">=1.0.0 <1.2.2",
+      "patched_versions": ">=1.2.2",
+      "severity": "high",
+      "cwe": "CWE-1284",
+      "github_advisory_id": "GHSA-68fv-2mgg-jv7q",
+      "url": "https://github.com/advisories/GHSA-68fv-2mgg-jv7q"
+    },
+    "1242626": {
+      "findings": [
+        {
+          "version": "8.3.2",
+          "paths": [
+            ".>@tailwindcss/vite>vite",
+            ".>astro>vite",
+            ".>astro>vitefu>vite"
+          ],
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "id": 1242626,
+      "title": "launch-editor: escapeCmdArgs() omits % escaping on Windows",
+      "module_name": "vite",
+      "vulnerable_versions": ">=8.3.0 <=8.3.2",
+      "patched_versions": ">=8.3.3",
+      "severity": "moderate",
+      "cwe": "CWE-78",
+      "github_advisory_id": "GHSA-698v-4r3x-3vcv",
+      "url": "https://github.com/advisories/GHSA-698v-4r3x-3vcv"
+    },
+    "1242655": {
+      "findings": [
+        {
+          "version": "8.3.2",
+          "paths": [
+            ".>@tailwindcss/vite>vite",
+            ".>astro>vite",
+            ".>astro>vitefu>vite"
+          ],
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "id": 1242655,
+      "title": "launch-editor: Editor CLI flag misinterpretation causing arbitrary command execution for some editors",
+      "module_name": "vite",
+      "vulnerable_versions": ">=8.3.0 <=8.3.2",
+      "patched_versions": ">=8.3.3",
+      "severity": "moderate",
+      "cwe": "CWE-88",
+      "github_advisory_id": "GHSA-r825-w8mm-5pxw",
+      "url": "https://github.com/advisories/GHSA-r825-w8mm-5pxw"
+    },
+    "1242662": {
+      "findings": [
+        {
+          "version": "8.3.2",
+          "paths": [
+            ".>@tailwindcss/vite>vite",
+            ".>astro>vite",
+            ".>astro>vitefu>vite"
+          ],
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "id": 1242662,
+      "title": "launch-editor: `fs.existsSync()` existence check can be bypassed on Windows",
+      "module_name": "vite",
+      "vulnerable_versions": ">=8.3.0 <=8.3.2",
+      "patched_versions": ">=8.3.3",
+      "severity": "high",
+      "cwe": "CWE-77",
+      "github_advisory_id": "GHSA-587h-7wmj-h5pm",
+      "url": "https://github.com/advisories/GHSA-587h-7wmj-h5pm"
+    },
+    "1242728": {
+      "findings": [
+        {
+          "version": "8.3.2",
+          "paths": [
+            ".>@tailwindcss/vite>vite",
+            ".>astro>vite",
+            ".>astro>vitefu>vite"
+          ],
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "id": 1242728,
+      "title": "Vite: Cross origin script execution through Vite custom middleware",
+      "module_name": "vite",
+      "vulnerable_versions": ">=8.3.0 <=8.3.2",
+      "patched_versions": ">=8.3.3",
+      "severity": "low",
+      "cwe": "CWE-80",
+      "github_advisory_id": "GHSA-9jrq-w75r-8gcw",
+      "url": "https://github.com/advisories/GHSA-9jrq-w75r-8gcw"
+    },
+    "1242734": {
+      "findings": [
+        {
+          "version": "8.3.2",
+          "paths": [
+            ".>@tailwindcss/vite>vite",
+            ".>astro>vite",
+            ".>astro>vitefu>vite"
+          ],
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "id": 1242734,
+      "title": "Vite: Files outside `server.fs.allow` could be served when project paths match system paths on non-Windows machine",
+      "module_name": "vite",
+      "vulnerable_versions": ">=8.3.0 <=8.3.2",
+      "patched_versions": ">=8.3.3",
+      "severity": "moderate",
+      "cwe": "CWE-22, CWE-284",
+      "github_advisory_id": "GHSA-rq7h-c2jc-7f22",
+      "url": "https://github.com/advisories/GHSA-rq7h-c2jc-7f22"
+    },
+    "1242737": {
+      "findings": [
+        {
+          "version": "8.3.2",
+          "paths": [
+            ".>@tailwindcss/vite>vite",
+            ".>astro>vite",
+            ".>astro>vitefu>vite"
+          ],
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "id": 1242737,
+      "title": "Vite: First 4 bytes of files outside of `server.fs` setting is exposed by `?vite-wasm-instance`",
+      "module_name": "vite",
+      "vulnerable_versions": ">=8.3.0 <=8.3.2",
+      "patched_versions": ">=8.3.3",
+      "severity": "moderate",
+      "cwe": "CWE-22, CWE-200, CWE-209",
+      "github_advisory_id": "GHSA-vfpm-58rq-9qcg",
+      "url": "https://github.com/advisories/GHSA-vfpm-58rq-9qcg"
+    },
+    "1243066": {
+      "findings": [
+        {
+          "version": "4.6.5",
+          "paths": [
+            ".>astro>zod"
+          ],
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "id": 1243066,
+      "title": "Zod can exhaust memory while validating oversized constrained collections",
+      "module_name": "zod",
+      "vulnerable_versions": "<4.6.6",
+      "patched_versions": ">=4.6.6",
+      "severity": "high",
+      "cwe": "CWE-770",
+      "github_advisory_id": "GHSA-mrhx-c7xc-m3w5",
+      "url": "https://github.com/advisories/GHSA-mrhx-c7xc-m3w5"
+    },
+    "1243077": {
+      "findings": [
+        {
+          "version": "8.11.2",
+          "paths": [
+            ".>astro>unifont>undici"
+          ],
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "id": 1243077,
+      "title": "undici vulnerable to Denial of Service via unbounded memory in the EventSource parser",
+      "module_name": "undici",
+      "vulnerable_versions": ">=8.0.0 <8.12.2",
+      "patched_versions": ">=8.12.2",
+      "severity": "moderate",
+      "cwe": "CWE-770",
+      "github_advisory_id": "GHSA-4qv8-2p9j-2685",
+      "url": "https://github.com/advisories/GHSA-4qv8-2p9j-2685"
+    },
+    "1243080": {
+      "findings": [
+        {
+          "version": "8.11.2",
+          "paths": [
+            ".>astro>unifont>undici"
+          ],
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "id": 1243080,
+      "title": "undici vulnerable to Subresource Integrity bypass via non-lowercase algorithm tokens",
+      "module_name": "undici",
+      "vulnerable_versions": ">=8.0.0 <8.12.2",
+      "patched_versions": ">=8.12.2",
+      "severity": "moderate",
+      "cwe": "CWE-178",
+      "github_advisory_id": "GHSA-f72v-6w45-q472",
+      "url": "https://github.com/advisories/GHSA-f72v-6w45-q472"
+    },
+    "1243112": {
+      "findings": [
+        {
+          "version": "8.11.2",
+          "paths": [
+            ".>astro>unifont>undici"
+          ],
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "id": 1243112,
+      "title": "undici vulnerable to Denial of Service via unhandled error on excessive content-encodings",
+      "module_name": "undici",
+      "vulnerable_versions": ">=8.0.0 <8.12.2",
+      "patched_versions": ">=8.12.2",
+      "severity": "high",
+      "cwe": "CWE-248, CWE-459",
+      "github_advisory_id": "GHSA-xjj6-f33q-929c",
+      "url": "https://github.com/advisories/GHSA-xjj6-f33q-929c"
+    }
+  },
+  "metadata": {
+    "vulnerabilities": {
+      "info": 0,
+      "low": 1,
+      "moderate": 6,
+      "high": 4,
+      "critical": 0
+    },
+    "dependencies": 206,
+    "devDependencies": 0,
+    "optionalDependencies": 130,
+    "totalDependencies": 336
+  }
+}
